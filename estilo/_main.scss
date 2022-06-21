@@ -1,0 +1,432 @@
+*{
+   font-family: 'Roboto Serif', serif;
+}
+@mixin subtitulos{
+    color: $azul;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid $azul;
+}
+@mixin parrafoS {
+    color: $negro;
+    font-size: 1rem;
+    text-align: center;
+}
+@mixin subtitle{
+    color: $azul;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navegacion{
+    background-color: $azul-fondo;
+        .headerHorarios{
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: $blanco;
+            text-align: center;
+            padding: 1rem;
+            &:hover{
+                color: $negro;
+            }
+            @media all and (max-width: 576px){
+                font-size: 1rem;
+            }
+    }  
+}
+    /*seccion index*/
+#section{
+    background-color: $blanco-fondo;
+    .sectionId{
+        display: flex;
+        justify-content: space-evenly;
+        @media all and (max-width: 576px){
+            flex-direction: column;
+            margin: 1px;
+        }
+    }
+    .sectionServicios{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        flex-direction: column;
+        box-shadow: 1px 1px 2px 1px;
+        padding: 30px;
+        margin: 40px;
+        animation-name: fondoAnimacion;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        @keyframes fondoAnimacion {
+            0%{background-color: $amarillo-transparent}
+            20%{background-color: $rojo-fuerte}
+            40%{background-color: $rojo-fondo}
+            60%{background-color: $rojo}
+            80%{background-color: $amarillo}
+            100%{background-color: $amarillo-transparent}
+        }
+        @media all and (max-width: 576px){
+            margin-top: 20px;
+            box-shadow: 2px 2px 2px;
+        }
+        .sectionImg{
+            width: 30%;
+            height: 30%;
+            margin: 20px;
+            padding: 2px;
+            @media all and (max-width: 576px){
+                width: 20%;
+                height: 20%;
+            }
+        }
+        .tituloSection{
+            @include subtitulos;
+            @media all and (max-width: 576px){
+                font-size: 1.5rem;
+            }
+        }
+        .parrafoSection{
+            @include parrafoS;
+        }
+    }
+    .marcasNustras{
+        background-color: $grisClaro;
+        .Marcas{
+            background-color: $blanco-fondo;
+            opacity: 0.9;
+            margin-top: 10px;
+            text-align: center;
+            .tituloMarcas{
+                @include subtitulos;
+                font-size: 4rem;
+                margin-top: 10px;
+                align-items: center;
+                @media all and (max-width: 576px){
+                    font-size: 1.5rem;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .nuestrasMarcas{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            justify-content: space-evenly;
+            padding: 10px;
+            margin: 10px;
+           @media all and (max-width: 576px){
+            grid-template-columns: auto auto;
+            justify-content: space-around;
+            padding: -10px;
+            margin: -30px;
+            }
+            .marcasLogo{
+                margin-top: 20px;
+            }
+        }
+        #mapa{
+            width: 80%;
+            height: 80%;
+            margin: 10px 100px 10px 140px;
+            @media all and (max-width: 576px){
+                width: 80%;
+                height: 28%;
+                margin: 20px 40px;
+                padding: 20px;
+            }
+            .titulomapa{
+                text-align: center;
+                .tituloMarcas{
+                    @include subtitulos;
+                    font-size: 2rem;
+                    padding: 0.5rem;
+                    color: $azul;
+                    @media all and (max-width: 576px){
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+/*pie de pagina, de todas las paginas*/
+#sectionSegundo{
+    background-color: $azul;
+    .tituloDelFooter{
+        color: $blanco;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px;
+        border-bottom: 2px solid $blanco;
+        @media all and (max-width: 576px){
+            font-size: 1.7rem;
+            border-bottom: 2px solid $blanco;
+        }
+    }
+    .headerFooter{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+        .listaDelFooter{
+            list-style: none;
+            @media all and (max-width: 576px){
+                margin-top: 30px;
+            }
+            .enlacesFooter{
+                text-decoration: none;
+                color: $blanco;
+                font-weight: bold;
+                font-size: 2rem;
+                @media all and (max-width: 576px){
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .redesFooter{
+        display: flex;
+        flex-direction: column;
+        .imagenesDelFooter{
+            margin: 0.5rem;
+            width: 64px;
+            height: 64px;
+        }
+    }
+}
+#footerDelFooter{
+    background-color: $negro;
+    .sectionFooter{
+        background-color: $azul-fondo;
+        display: flex;
+        justify-content: space-evenly;
+        .logoDelFooter{
+           color: $blanco;
+           font-size: 4rem;
+           font-weight: bold;
+           font-style: italic;
+           margin: 1rem;
+           animation-name: cambioColor;
+           animation-duration: 6s;
+           animation-timing-function: linear;
+           animation-iteration-count: infinite;
+           @keyframes cambioColor {
+               0%{color: $negro}
+               20%{color: $blanco}
+               40%{color: $rojo}
+               60%{color: $amarillo}
+               80%{color: $azul}
+               100%{color: $negro}
+           }
+           @media all and (max-width: 576px){
+            font-size: 3rem;   
+            }
+        }
+    }
+    .desarrollador{
+        background-color: $blanco;
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+        .copyFooter{
+            width: 30px;
+            height: 30px;
+        }
+        .parrafoCopy{
+            color: $negro;
+            font-size: 1.5rem;
+            margin: 0 0 20px 10px;
+            @media all and (max-width: 576px){
+                font-size: 1rem;
+            }
+        }
+    }
+}
+/*productos*/
+#sectionProducto {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    background-color: $blanco-fondo;
+    @media all and (max-width: 576px){
+        grid-template-columns: auto;
+    }
+    .contenedorProductos{
+        margin: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 1px 8px 10px;
+        padding: 5px;
+        .imgProductos{
+            width: 64;
+            height: 64;
+            margin: 2rem 4rem;
+        }
+        .subPro{
+            @include subtitle;
+        }
+        .botonProducto{
+            background-color: $azul-fondo;
+            color: $blanco;
+            font-weight: bold;
+            font-size: 1rem;
+            border: none;
+            border-bottom: 1px solid $blanco;
+            margin: 0.5rem;
+            padding: 0.2rem 1rem;
+        }
+    }
+   
+}
+                                            /*servicio*/
+#sectionServicios{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: $blanco-fondo;
+    margin: 10px;
+    @media all and (max-width: 576px){
+        grid-template-columns: auto;
+    }
+    .contenedorServicio{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 5rem;
+        border: 1px solid $negro;
+        @media all and (max-width: 576px) {
+            font-size: -30px;
+            margin: 2rem;
+        }
+        .imgServicios{
+            width: 30rem;
+            height: 20rem;
+            margin-bottom: 20px;
+            @media all and (max-width: 576px){
+                width: 200px;
+                height: 100px;
+                margin-bottom: 20px;
+            }
+        }
+        .conteinerServicio{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            .tituloServicios{
+                @include subtitle;
+                border-bottom: 1px solid $azul;
+                @media all and (max-width: 576px) {
+                    font-size: 20px;
+            }
+            .parrafoServicio{
+                @include parrafoS;
+                text-align: left;
+                }
+            }
+        }
+    }
+}   
+
+                                /*preguntas*/
+.bodyPreguntas{
+    background-image: url(../imagenes/preguntas.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    opacity: 0.9;
+    #contenedorAcordeon{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 0 4% 15%;
+    z-index: 10;
+        .contenedorItem{
+            border-bottom: 2px solid $azul;
+        }
+    }
+}
+                            /*contacto*/
+#sectionContacto{
+    opacity: 0.8;
+    .contenedorTitulo{
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+        z-index: 1;
+        .tituloContacto{
+            @include subtitle;
+            font-size: 3rem;
+            animation-name: fondo;
+            animation-duration: 1.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            @keyframes fondo {
+                0%{color: $azul}
+                50%{color: $rojo};
+                100%{color: $azul}
+            }
+            @media all and (max-width: 576px){
+                font-size: 1.7rem;
+            }
+        }
+    }
+    .formularioContacto{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2rem;
+        @media all and (max-width: 768px){
+            flex-direction: column;
+        }
+        .contenedorContacto, .datosContacto{
+            background-color: $blanco-fondo;
+            opacity: 0.9;
+            .conteinerContacto, .contactosDatos, .redesSociales{
+                display: flex;
+                flex-direction: column;
+                margin: 2rem;
+                .titleContacto{
+                    @include subtitle;
+                    z-index: 2;
+                    border-bottom: 1px solid $azul;
+                    margin-bottom: 20px;
+                    @media all and(max-width: 576px){
+                        font-size: 1.5rem;
+                    }
+                }
+                .inputContacto{
+                    background: none;
+                    border: none;
+                    border-bottom: 2px solid $blanco;
+                    color: $negro;
+                    margin: 1px;
+                    &:focus{
+                        background-color: $blanco-fondo;
+                    }
+                }
+            }   
+            .enlaceContacto{
+                text-decoration: none;
+                color: $negro;
+                text-align: left;
+                .imgContacto{
+                    width: 20px;
+                    height: 20px;
+                    margin: 0.5rem;
+                }
+            }
+            .botonContacto{
+                color: $blanco;
+                background-color: $azul;
+                box-shadow: 5px 1px 5px;
+                margin-top: 10px;
+            }
+            
+        }
+        
+    }
+}

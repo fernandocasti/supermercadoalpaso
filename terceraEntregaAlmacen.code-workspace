@@ -1,0 +1,18 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "pwa-msedge",
+                "request": "launch",
+                "name": "Open index.html",
+                "file": "c:\\terceraEntregaAlmacen\\index.html"
+            }
+        ]
+    }
+}

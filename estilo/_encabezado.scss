@@ -1,0 +1,428 @@
+#encabezado{
+    background-image: url(../imagenes/fondoSuper1.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+    @media all and(max-width: 576px){
+        height: 220px;
+    }
+    .header{
+        display: flex;
+        justify-content: flex-end;
+        z-index: 10;
+        .tituloNa{
+            color: $negro;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 2rem;
+            font-style: italic;
+            margin-right: 350px;
+            animation-name: colores;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            @keyframes colores {
+                0%{color: $negro}
+                20%{color: $blanco}
+                40%{color: $rojo}
+                60%{color: $amarillo}
+                80%{color: $azul}
+                100%{color: $negro}
+            }
+            @media all and (max-width: 576px){
+                margin-right: 200px;
+                font-size: 1rem;
+            }
+        }
+        .listado{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            .enlaceHeader{
+                text-decoration: none;
+                color: $azul;
+                font-size: 2.5rem;
+                margin-left: 10px;
+                &:hover{
+                    color: $negro;
+                    border-bottom:2px solid $negro;
+                }
+            }
+        }  
+    }
+    .contenidoHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 1;
+        .tituloHeader{
+            font-size: 6rem;
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            color: $azul;
+            animation-name: tamaño;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            @keyframes tamaño {
+                0%{font-size: 1rem}
+                20%{font-size: 2rem}
+                40%{font-size: 3rem}
+                60%{font-size: 4rem}
+                80%{font-size: 5rem;}
+                100%{font-size: 6rem;}
+            }
+            @media all and (max-width: 576px){
+                font-size: 2rem;
+                animation-name: tamaños;
+                animation-duration: 2s;
+                animation-timing-function: linear;
+                animation-iteration-count: 1;
+                @keyframes tamaños {
+                    0%{font-size: 0.3rem}
+                    20%{font-size: 0.9rem}
+                    40%{font-size: 1.2rem}
+                    60%{font-size: 1.5rem}
+                    80%{font-size: 1.8rem}
+                    100%{font-size: 2rem}
+            }
+        }
+    }
+        .content{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 1rem;
+            .imagenesListado{
+                width: 50px;
+                height: 50px;
+                margin-left: 50px;
+                @media all and (max-width: 576px){
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+#encabezadoPoducto{
+    background-image: url(../imagenes/productos.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    opacity: 0.8;
+    width: 100%;
+    height: auto;
+    .header{
+        display: flex;
+        justify-content: flex-end;
+        z-index: 10;
+        .tituloNa{
+            color: $blanco;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 2rem;
+            font-style: italic;
+            margin-right: 350px;
+            z-index: 1;
+            animation-name: colores;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: 4;
+            @keyframes colores {
+                0%{color: $negro}
+                20%{color: $blanco}
+                40%{color: $rojo}
+                60%{color: $amarillo}
+                80%{color: $azul}
+                100%{color: $negro}
+            }
+            @media all and (max-width: 576px){
+                margin-right: 200px;
+                font-size: 1rem;
+            }
+        }
+        .listado{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            .enlaceHeader{
+                text-decoration: none;
+                color: $blanco;
+                font-size: 2.5rem;
+                margin-left: 10px;
+                &:hover{
+                    color: $rojo;
+                    border-bottom:2px solid $rojo;
+                    margin-top: -5px;
+                }
+            }
+        }  
+    }
+    .contenidoHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 1;
+        .tituloHeader{
+            padding: 10rem;
+        }
+        .content{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 1rem;
+            .imagenesListado{
+                width: 50px;
+                height: 50px;
+                margin-left: 50px;
+                @media all and (max-width: 576px){
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+#encabezadoServicio{
+    background-image: url(../imagenes/encabezadoServicio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: center;
+    background-size: cover;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    .header{
+        display: flex;
+        justify-content: flex-end;
+        z-index: 10;
+        .tituloNa{
+            color: $azul;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 2rem;
+            font-style: italic;
+            margin-right: 350px;
+            animation-name: colores;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: 4;
+            @keyframes colores {
+                0%{color: $negro}
+                20%{color: $blanco}
+                40%{color: $rojo}
+                60%{color: $amarillo}
+                80%{color: $azul}
+                100%{color: $negro}
+            }
+            @media all and (max-width: 576px){
+                margin-right: 200px;
+                font-size: 1rem;
+            }
+        }
+        .listado{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            .enlaceHeader{
+                text-decoration: none;
+                color: $azul;
+                font-size: 2.5rem;
+                margin-left: 10px;
+                &:hover{
+                    color: $amarillo;
+                    border-bottom:2px solid $amarillo;
+                    margin-top: -10px;
+                }
+            }
+        }
+    }
+    .contenidoHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 1;
+        .tituloHeader{
+            padding: 10rem;
+        }
+        .content{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 1rem;
+            .imagenesListado{
+                width: 50px;
+                height: 50px;
+                margin-left: 50px;
+                @media all and (max-width: 576px){
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+#encabezadoPreguntas{
+    background-image: url(../imagenes/preguntas.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    .header{
+        display: flex;
+        justify-content: flex-end;
+        z-index: 10;
+        .tituloNa{
+            color: $negro;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 2rem;
+            font-style: italic;
+            margin-right: 350px;
+            animation-name: colores;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: 4;
+            @keyframes colores {
+                0%{color: $negro}
+                20%{color: $blanco}
+                40%{color: $rojo}
+                60%{color: $amarillo}
+                80%{color: $azul}
+                100%{color: $negro}
+            }
+            @media all and (max-width: 576px){
+                margin-right: 200px;
+                font-size: 1rem;
+            }
+        }
+        .listado{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            .enlaceHeader{
+                text-decoration: none;
+                color: $negro;
+                font-size: 2.5rem;
+                margin-left: 10px;
+                &:hover{
+                    color: $azul;
+                    border-bottom:2px solid $azul;
+                    margin-top: -10px;
+                }
+            }
+        }
+    }
+    .contenidoHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 1;
+        .tituloHeader{
+            padding: 10rem;
+        }
+        .content{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 1rem;
+            .imagenesListado{
+                width: 50px;
+                height: 50px;
+                margin-left: 50px;
+                @media all and (max-width: 576px){
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+#encabezadoContacto{
+    background-image: url(../imagenes/contacto.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    .header{
+        display: flex;
+        justify-content: flex-end;
+        z-index: 10;
+        .tituloNa{
+            color: $negro;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 2rem;
+            font-style: italic;
+            margin-right: 350px;
+            animation-name: colores;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: 4;
+            @keyframes colores {
+                0%{color: $negro}
+                20%{color: $blanco}
+                40%{color: $rojo}
+                60%{color: $amarillo}
+                80%{color: $azul}
+                100%{color: $negro}
+            }
+            @media all and (max-width: 576px){
+                margin-right: 200px;
+                font-size: 1rem;
+                color: $azul;
+            }
+        }
+        .listado{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            .enlaceHeader{
+                text-decoration: none;
+                color: $negro;
+                font-size: 2.5rem;
+                margin-left: 10px;
+                @media all and(max-width: 576px){
+                    color: $azul;
+                }
+                &:hover{
+                    color: $azul;
+                    border-bottom:2px solid $azul;
+                    margin-top: -10px;
+                }
+            }
+        }
+    }
+    .contenidoHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 1;
+        .tituloHeader{
+            padding: 10rem;
+        }
+        .content{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 1rem;
+            .imagenesListado{
+                width: 50px;
+                height: 50px;
+                margin-left: 50px;
+                @media all and (max-width: 576px){
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
