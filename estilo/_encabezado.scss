@@ -4,7 +4,7 @@
     background-position: bottom;
     background-size: cover;
     width: 100%;
-    height: 55vh;
+    height: auto;
     @media all and(max-width: 576px){
         height: auto;
     }
@@ -58,22 +58,23 @@
         justify-content: space-evenly;
         z-index: 1;
         .tituloHeader{
-            font-size: 6rem;
+            font-size: 7rem;
             text-align: center;
             font-weight: bold;
             font-style: italic;
             color: $azul;
             animation-name: tamaño;
+            animation-delay: 1s;
             animation-duration: 2s;
             animation-timing-function: linear;
             animation-iteration-count: 1;
             @keyframes tamaño {
-                0%{font-size: 1rem}
-                20%{font-size: 2rem}
-                40%{font-size: 3rem}
+                0%{font-size: 0.2rem}
+                20%{font-size: 1.5rem}
+                40%{font-size: 2.9rem}
                 60%{font-size: 4rem}
-                80%{font-size: 5rem;}
-                100%{font-size: 6rem;}
+                80%{font-size: 5.2rem;}
+                100%{font-size: 7rem;}
             }
             @media all and (max-width: 576px){
                 font-size: 2rem;
@@ -151,7 +152,7 @@
             justify-content: space-evenly;
             .enlaceHeader{
                 text-decoration: none;
-                color: $blanco;
+                color: $amarillo;
                 font-size: 2.5rem;
                 margin-left: 10px;
                 &:hover{
