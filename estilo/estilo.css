@@ -5,6 +5,8 @@
 
 .navegacion {
   background-color: rgb(2, 27, 250);
+  position: relative;
+  bottom: 0;
 }
 .navegacion .headerHorarios {
   font-size: 1.8rem;
@@ -592,7 +594,7 @@
 }
 @media all and (max-width: 576px) {
   #encabezado {
-    height: 220px;
+    height: auto;
   }
 }
 #encabezado .header {
