@@ -470,6 +470,7 @@
 }
 .bodyPreguntas #contenedorAcordeon .contenedorItem {
   border-bottom: 2px solid blue;
+  background-color: rgba(255, 255, 0, 0.822);
 }
 
 /*contacto*/
@@ -521,7 +522,7 @@
 }
 @media all and (max-width: 576px) {
   #sectionContacto .contenedorTitulo .tituloContacto {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 }
 #sectionContacto .formularioContacto {
@@ -571,6 +572,11 @@
   text-decoration: none;
   color: rgb(0, 0, 0);
   text-align: left;
+}
+@media all and (max-width: 576px) {
+  #sectionContacto .formularioContacto .contenedorContacto .enlaceContacto, #sectionContacto .formularioContacto .datosContacto .enlaceContacto {
+    font-size: 1.5rem;
+  }
 }
 #sectionContacto .formularioContacto .contenedorContacto .enlaceContacto .imgContacto, #sectionContacto .formularioContacto .datosContacto .enlaceContacto .imgContacto {
   width: 20px;
@@ -874,16 +880,18 @@
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  z-index: 20;
 }
 #encabezadoPoducto .header .listado .enlaceHeader {
   text-decoration: none;
   color: yellow;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
   font-size: 2.5rem;
   margin-left: 10px;
 }
 #encabezadoPoducto .header .listado .enlaceHeader:hover {
-  color: rgba(253, 19, 19, 0.932);
-  border-bottom: 2px solid rgba(253, 19, 19, 0.932);
+  color: rgba(255, 255, 0, 0.822);
+  border-bottom: 2px solid rgba(255, 255, 0, 0.822);
   margin-top: -5px;
 }
 #encabezadoPoducto .contenidoHeader {
@@ -1180,7 +1188,7 @@
 }
 #encabezadoContacto .header .listado .enlaceHeader {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(248, 246, 246);
   font-size: 2.5rem;
   margin-left: 10px;
 }

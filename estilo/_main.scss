@@ -349,6 +349,7 @@
     z-index: 10;
         .contenedorItem{
             border-bottom: 2px solid $azul;
+            background-color: $amarillo-transparent;
         }
     }
 }
@@ -373,7 +374,7 @@
                 100%{color: $azul}
             }
             @media all and (max-width: 576px){
-                font-size: 1.7rem;
+                font-size: 2rem;
             }
         }
     }
@@ -415,6 +416,9 @@
                 text-decoration: none;
                 color: $negro;
                 text-align: left;
+                @media all and(max-width: 576px){
+                    font-size: 1.5rem;
+                }
                 .imgContacto{
                     width: 20px;
                     height: 20px;
