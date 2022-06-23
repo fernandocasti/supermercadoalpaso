@@ -856,8 +856,8 @@
 }
 @media all and (max-width: 576px) {
   #encabezadoPoducto .contenidoHeader .content .imagenesListado {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     margin-left: 10px;
   }
 }
@@ -963,8 +963,8 @@
 }
 @media all and (max-width: 576px) {
   #encabezadoServicio .contenidoHeader .content .imagenesListado {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     margin-left: 10px;
   }
 }
@@ -1069,8 +1069,8 @@
 }
 @media all and (max-width: 576px) {
   #encabezadoPreguntas .contenidoHeader .content .imagenesListado {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     margin-left: 10px;
   }
 }
@@ -1176,8 +1176,8 @@
 }
 @media all and (max-width: 576px) {
   #encabezadoContacto .contenidoHeader .content .imagenesListado {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     margin-left: 10px;
   }
 }/*# sourceMappingURL=estilo.css.map */
