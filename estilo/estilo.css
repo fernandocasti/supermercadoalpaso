@@ -131,7 +131,7 @@
 }
 @media all and (max-width: 576px) {
   #section .sectionServicios .tituloSection {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
   }
 }
