@@ -1,10 +1,11 @@
 #encabezado{
-    background-image: url(../imagenes/fondoSuper1.jpg);
+    background-image: url(../imagenes/supermercadoalpaso1.jpg);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center bottom;
     background-size: cover;
     width: 100%;
     height: auto;
+    opacity: 0.8;
     @media all and(max-width: 576px){
         height: auto;
     }
@@ -16,7 +17,7 @@
             color: $negro;
             text-decoration: none;
             font-weight: bold;
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-style: italic;
             margin-right: 350px;
             animation-name: colores;
@@ -32,8 +33,8 @@
                 100%{color: $negro}
             }
             @media all and (max-width: 576px){
-                margin-right: 200px;
-                font-size: 1rem;
+                margin-right: 150px;
+                font-size: 2rem;
             }
         }
         .listado{
@@ -42,12 +43,17 @@
             justify-content: space-evenly;
             .enlaceHeader{
                 text-decoration: none;
-                color: $azul;
+                color: $amarillo;
+                text-shadow: 2px 2px 2px $negro;
                 font-size: 2.5rem;
                 margin-left: 10px;
                 &:hover{
-                    color: $negro;
-                    border-bottom:2px solid $negro;
+                    color: $azul;
+                    border-bottom:2px solid $azul;
+                    margin-top: -15px;
+                }
+                @media all and (max-width: 576px){
+                    font-size: 1.5rem;
                 }
             }
         }  
@@ -58,51 +64,30 @@
         justify-content: space-evenly;
         z-index: 1;
         .tituloHeader{
-            font-size: 7rem;
+            font-size: 3rem;
             text-align: center;
             font-weight: bold;
             font-style: italic;
-            color: $azul;
+            color: $amarillo;
+            margin-bottom: 1rem;
+            padding-top: 20rem;
             animation-name: tamaño;
             animation-delay: 1s;
             animation-duration: 2s;
             animation-timing-function: linear;
             animation-iteration-count: 1;
-            @keyframes tamaño {
-                0%{font-size: 0.2rem}
-                20%{font-size: 1.5rem}
-                40%{font-size: 2.9rem}
-                60%{font-size: 4rem}
-                80%{font-size: 5.2rem;}
-                100%{font-size: 7rem;}
-            }
-            @media all and (max-width: 576px){
-                font-size: 2rem;
-                animation-name: tamaños;
-                animation-duration: 2s;
-                animation-timing-function: linear;
-                animation-iteration-count: 1;
-                @keyframes tamaños {
-                    0%{font-size: 0.3rem}
-                    20%{font-size: 0.9rem}
-                    40%{font-size: 1.2rem}
-                    60%{font-size: 1.5rem}
-                    80%{font-size: 1.8rem}
-                    100%{font-size: 2rem}
-            }
         }
-    }
         .content{
             display: flex;
             justify-content: space-evenly;
             margin-bottom: 1rem;
+            bottom: 1rem;
             .imagenesListado{
                 width: 50px;
                 height: 50px;
-                margin-left: 50px;
                 @media all and (max-width: 576px){
-                    width: 20px;
-                    height: 20px;
+                    width: 35px;
+                    height: 35px;
                     margin-left: 10px;
                 }
             }
@@ -142,8 +127,8 @@
                 100%{color: $negro}
             }
             @media all and (max-width: 576px){
-                margin-right: 200px;
-                font-size: 1rem;
+                margin-right: 150px;
+                font-size: 2rem;
             }
         }
         .listado{
@@ -158,9 +143,12 @@
                 font-size: 2.5rem;
                 margin-left: 10px;
                 &:hover{
-                    color: $amarillo-transparent;
-                    border-bottom:2px solid $amarillo-transparent;
-                    margin-top: -5px;
+                    color: $azul;
+                    border-bottom:2px solid $azul;
+                    margin-top: -15px;
+                }
+                @media all and (max-width: 576px){
+                    font-size: 1.5rem;
                 }
             }
         }  
@@ -194,9 +182,8 @@
     background-image: url(../imagenes/encabezadoServicio.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    object-fit: center;
     background-size: cover;
-    object-fit: contain;
+    opacity: 0.8;
     width: 100%;
     height: auto;
     .header{
@@ -223,8 +210,8 @@
                 100%{color: $negro}
             }
             @media all and (max-width: 576px){
-                margin-right: 200px;
-                font-size: 1rem;
+                margin-right: 150px;
+                font-size: 2rem;
             }
         }
         .listado{
@@ -233,13 +220,19 @@
             justify-content: space-evenly;
             .enlaceHeader{
                 text-decoration: none;
-                color: $azul;
+                color: $amarillo;
+                text-shadow: 2px 2px 2px $negro;
                 font-size: 2.5rem;
                 margin-left: 10px;
                 &:hover{
+                    color: $azul;
+                    border-bottom:2px solid $azul;
+                    margin-top: -15px;
+                }
+                @media all and (max-width: 576px){
+                    font-size: 1.5rem;
                     color: $amarillo;
-                    border-bottom:2px solid $amarillo;
-                    margin-top: -10px;
+                    text-shadow: 2px 2px 2px $negro;
                 }
             }
         }
@@ -301,8 +294,8 @@
                 100%{color: $negro}
             }
             @media all and (max-width: 576px){
-                margin-right: 200px;
-                font-size: 1rem;
+                margin-right: 150px;
+                font-size: 2rem;
             }
         }
         .listado{
@@ -311,13 +304,17 @@
             justify-content: space-evenly;
             .enlaceHeader{
                 text-decoration: none;
-                color: $negro;
+                color: $amarillo;
+                text-shadow: 2px 2px 2px $negro;
                 font-size: 2.5rem;
                 margin-left: 10px;
                 &:hover{
                     color: $azul;
                     border-bottom:2px solid $azul;
                     margin-top: -10px;
+                }
+                @media all and (max-width: 576px){
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -379,8 +376,8 @@
                 100%{color: $negro}
             }
             @media all and (max-width: 576px){
-                margin-right: 200px;
-                font-size: 1rem;
+                margin-right: 150px;
+                font-size: 2rem;
                 color: $azul;
             }
         }
@@ -390,16 +387,17 @@
             justify-content: space-evenly;
             .enlaceHeader{
                 text-decoration: none;
-                color: $blanco;
+                color: $amarillo;
+                text-shadow: 2px 2px 2px $negro;
                 font-size: 2.5rem;
                 margin-left: 10px;
-                @media all and(max-width: 576px){
-                    color: $azul;
-                }
                 &:hover{
                     color: $azul;
                     border-bottom:2px solid $azul;
                     margin-top: -10px;
+                }
+                @media all and (max-width: 576px){
+                    font-size: 1.5rem;
                 }
             }
         }

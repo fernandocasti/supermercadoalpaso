@@ -3,23 +3,41 @@
   font-family: "Roboto Serif", serif;
 }
 
-.navegacion {
+/* esto es informacion de todas las pagina*/
+.contenidoNavegacion {
+  flex-direction: row;
+  width: 100%;
   background-color: rgb(2, 27, 250);
-  position: relative;
-  bottom: 0;
 }
-.navegacion .headerHorarios {
+.contenidoNavegacion .headerHorarios {
   font-size: 1.8rem;
   font-weight: bold;
-  color: rgb(248, 246, 246);
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 1rem;
 }
-.navegacion .headerHorarios:hover {
+.contenidoNavegacion .headerHorarios:hover {
   color: rgb(0, 0, 0);
+  background-color: rgb(2, 27, 250);
 }
 @media all and (max-width: 576px) {
-  .navegacion .headerHorarios {
+  .contenidoNavegacion .headerHorarios {
+    font-size: 1rem;
+  }
+}
+.contenidoNavegacion .headerDireccion {
+  background-color: rgba(253, 19, 19, 0.932);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgb(248, 246, 246);
+  padding: 1rem;
+}
+.contenidoNavegacion .headerDireccion:hover {
+  color: blue;
+}
+@media all and (max-width: 576px) {
+  .contenidoNavegacion .headerDireccion {
     font-size: 1rem;
   }
 }
@@ -49,10 +67,10 @@
   margin: 40px;
   -webkit-animation-name: fondoAnimacion;
           animation-name: fondoAnimacion;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, -0.265, -1.55);
+          animation-timing-function: cubic-bezier(0.68, -0.55, -0.265, -1.55);
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -60,17 +78,11 @@
   0% {
     background-color: rgba(255, 255, 0, 0.822);
   }
-  20% {
-    background-color: rgb(252, 14, 14);
-  }
-  40% {
-    background-color: rgba(255, 0, 0, 0.63);
+  30% {
+    background-color: rgba(253, 19, 19, 0.932);
   }
   60% {
     background-color: rgba(253, 19, 19, 0.932);
-  }
-  80% {
-    background-color: yellow;
   }
   100% {
     background-color: rgba(255, 255, 0, 0.822);
@@ -80,17 +92,11 @@
   0% {
     background-color: rgba(255, 255, 0, 0.822);
   }
-  20% {
-    background-color: rgb(252, 14, 14);
-  }
-  40% {
-    background-color: rgba(255, 0, 0, 0.63);
+  30% {
+    background-color: rgba(253, 19, 19, 0.932);
   }
   60% {
     background-color: rgba(253, 19, 19, 0.932);
-  }
-  80% {
-    background-color: yellow;
   }
   100% {
     background-color: rgba(255, 255, 0, 0.822);
@@ -120,10 +126,13 @@
   font-weight: bold;
   text-align: center;
   border-bottom: 2px solid blue;
+  border: none;
+  background: none;
 }
 @media all and (max-width: 576px) {
   #section .sectionServicios .tituloSection {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 10px;
   }
 }
 #section .sectionServicios .parrafoSection {
@@ -397,6 +406,11 @@
   background-color: rgb(236, 236, 236);
   margin: 10px;
 }
+@media all and (max-width: 980px) {
+  #sectionServicios {
+    grid-template-columns: auto;
+  }
+}
 @media all and (max-width: 576px) {
   #sectionServicios {
     grid-template-columns: auto;
@@ -408,6 +422,11 @@
   flex-direction: column-reverse;
   margin: 5rem;
   border: 1px solid rgb(0, 0, 0);
+}
+@media all and (max-width: 1250px) {
+  #sectionServicios .contenedorServicio {
+    margin: 1rem;
+  }
 }
 @media all and (max-width: 576px) {
   #sectionServicios .contenedorServicio {
@@ -422,8 +441,8 @@
 }
 @media all and (max-width: 576px) {
   #sectionServicios .contenedorServicio .imgServicios {
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
     margin-bottom: 20px;
   }
 }
@@ -555,7 +574,7 @@
 }
 @media all and (max-width: 576px) {
   #sectionContacto .formularioContacto .contenedorContacto .conteinerContacto .titleContacto, #sectionContacto .formularioContacto .contenedorContacto .contactosDatos .titleContacto, #sectionContacto .formularioContacto .contenedorContacto .redesSociales .titleContacto, #sectionContacto .formularioContacto .datosContacto .conteinerContacto .titleContacto, #sectionContacto .formularioContacto .datosContacto .contactosDatos .titleContacto, #sectionContacto .formularioContacto .datosContacto .redesSociales .titleContacto {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 #sectionContacto .formularioContacto .contenedorContacto .conteinerContacto .inputContacto, #sectionContacto .formularioContacto .contenedorContacto .contactosDatos .inputContacto, #sectionContacto .formularioContacto .contenedorContacto .redesSociales .inputContacto, #sectionContacto .formularioContacto .datosContacto .conteinerContacto .inputContacto, #sectionContacto .formularioContacto .datosContacto .contactosDatos .inputContacto, #sectionContacto .formularioContacto .datosContacto .redesSociales .inputContacto {
@@ -575,7 +594,7 @@
 }
 @media all and (max-width: 576px) {
   #sectionContacto .formularioContacto .contenedorContacto .enlaceContacto, #sectionContacto .formularioContacto .datosContacto .enlaceContacto {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 #sectionContacto .formularioContacto .contenedorContacto .enlaceContacto .imgContacto, #sectionContacto .formularioContacto .datosContacto .enlaceContacto .imgContacto {
@@ -591,12 +610,13 @@
 }
 
 #encabezado {
-  background-image: url(../imagenes/fondoSuper1.jpg);
+  background-image: url(../imagenes/supermercadoalpaso1.jpg);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center bottom;
   background-size: cover;
   width: 100%;
   height: auto;
+  opacity: 0.8;
 }
 @media all and (max-width: 576px) {
   #encabezado {
@@ -612,7 +632,7 @@
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-style: italic;
   margin-right: 350px;
   -webkit-animation-name: colores;
@@ -666,8 +686,8 @@
 }
 @media all and (max-width: 576px) {
   #encabezado .header .tituloNa {
-    margin-right: 200px;
-    font-size: 1rem;
+    margin-right: 150px;
+    font-size: 2rem;
   }
 }
 #encabezado .header .listado {
@@ -677,13 +697,20 @@
 }
 #encabezado .header .listado .enlaceHeader {
   text-decoration: none;
-  color: blue;
+  color: yellow;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
   font-size: 2.5rem;
   margin-left: 10px;
 }
 #encabezado .header .listado .enlaceHeader:hover {
-  color: rgb(0, 0, 0);
-  border-bottom: 2px solid rgb(0, 0, 0);
+  color: blue;
+  border-bottom: 2px solid blue;
+  margin-top: -15px;
+}
+@media all and (max-width: 576px) {
+  #encabezado .header .listado .enlaceHeader {
+    font-size: 1.5rem;
+  }
 }
 #encabezado .contenidoHeader {
   display: flex;
@@ -692,11 +719,13 @@
   z-index: 1;
 }
 #encabezado .contenidoHeader .tituloHeader {
-  font-size: 7rem;
+  font-size: 3rem;
   text-align: center;
   font-weight: bold;
   font-style: italic;
-  color: blue;
+  color: yellow;
+  margin-bottom: 1rem;
+  padding-top: 20rem;
   -webkit-animation-name: tamaño;
           animation-name: tamaño;
   -webkit-animation-delay: 1s;
@@ -708,113 +737,20 @@
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
-@-webkit-keyframes tamaño {
-  0% {
-    font-size: 0.2rem;
-  }
-  20% {
-    font-size: 1.5rem;
-  }
-  40% {
-    font-size: 2.9rem;
-  }
-  60% {
-    font-size: 4rem;
-  }
-  80% {
-    font-size: 5.2rem;
-  }
-  100% {
-    font-size: 7rem;
-  }
-}
-@keyframes tamaño {
-  0% {
-    font-size: 0.2rem;
-  }
-  20% {
-    font-size: 1.5rem;
-  }
-  40% {
-    font-size: 2.9rem;
-  }
-  60% {
-    font-size: 4rem;
-  }
-  80% {
-    font-size: 5.2rem;
-  }
-  100% {
-    font-size: 7rem;
-  }
-}
-@media all and (max-width: 576px) {
-  #encabezado .contenidoHeader .tituloHeader {
-    font-size: 2rem;
-    -webkit-animation-name: tamaños;
-            animation-name: tamaños;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-  }
-  @-webkit-keyframes tamaños {
-    0% {
-      font-size: 0.3rem;
-    }
-    20% {
-      font-size: 0.9rem;
-    }
-    40% {
-      font-size: 1.2rem;
-    }
-    60% {
-      font-size: 1.5rem;
-    }
-    80% {
-      font-size: 1.8rem;
-    }
-    100% {
-      font-size: 2rem;
-    }
-  }
-  @keyframes tamaños {
-    0% {
-      font-size: 0.3rem;
-    }
-    20% {
-      font-size: 0.9rem;
-    }
-    40% {
-      font-size: 1.2rem;
-    }
-    60% {
-      font-size: 1.5rem;
-    }
-    80% {
-      font-size: 1.8rem;
-    }
-    100% {
-      font-size: 2rem;
-    }
-  }
-}
 #encabezado .contenidoHeader .content {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 1rem;
+  bottom: 1rem;
 }
 #encabezado .contenidoHeader .content .imagenesListado {
   width: 50px;
   height: 50px;
-  margin-left: 50px;
 }
 @media all and (max-width: 576px) {
   #encabezado .contenidoHeader .content .imagenesListado {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     margin-left: 10px;
   }
 }
@@ -872,8 +808,8 @@
 }
 @media all and (max-width: 576px) {
   #encabezadoPoducto .header .tituloNa {
-    margin-right: 200px;
-    font-size: 1rem;
+    margin-right: 150px;
+    font-size: 2rem;
   }
 }
 #encabezadoPoducto .header .listado {
@@ -890,9 +826,14 @@
   margin-left: 10px;
 }
 #encabezadoPoducto .header .listado .enlaceHeader:hover {
-  color: rgba(255, 255, 0, 0.822);
-  border-bottom: 2px solid rgba(255, 255, 0, 0.822);
-  margin-top: -5px;
+  color: blue;
+  border-bottom: 2px solid blue;
+  margin-top: -15px;
+}
+@media all and (max-width: 576px) {
+  #encabezadoPoducto .header .listado .enlaceHeader {
+    font-size: 1.5rem;
+  }
 }
 #encabezadoPoducto .contenidoHeader {
   display: flex;
@@ -925,11 +866,8 @@
   background-image: url(../imagenes/encabezadoServicio.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  -o-object-fit: center;
-     object-fit: center;
   background-size: cover;
-  -o-object-fit: contain;
-     object-fit: contain;
+  opacity: 0.8;
   width: 100%;
   height: auto;
 }
@@ -976,8 +914,8 @@
 }
 @media all and (max-width: 576px) {
   #encabezadoServicio .header .tituloNa {
-    margin-right: 200px;
-    font-size: 1rem;
+    margin-right: 150px;
+    font-size: 2rem;
   }
 }
 #encabezadoServicio .header .listado {
@@ -987,14 +925,22 @@
 }
 #encabezadoServicio .header .listado .enlaceHeader {
   text-decoration: none;
-  color: blue;
+  color: yellow;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
   font-size: 2.5rem;
   margin-left: 10px;
 }
 #encabezadoServicio .header .listado .enlaceHeader:hover {
-  color: yellow;
-  border-bottom: 2px solid yellow;
-  margin-top: -10px;
+  color: blue;
+  border-bottom: 2px solid blue;
+  margin-top: -15px;
+}
+@media all and (max-width: 576px) {
+  #encabezadoServicio .header .listado .enlaceHeader {
+    font-size: 1.5rem;
+    color: yellow;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  }
 }
 #encabezadoServicio .contenidoHeader {
   display: flex;
@@ -1076,8 +1022,8 @@
 }
 @media all and (max-width: 576px) {
   #encabezadoPreguntas .header .tituloNa {
-    margin-right: 200px;
-    font-size: 1rem;
+    margin-right: 150px;
+    font-size: 2rem;
   }
 }
 #encabezadoPreguntas .header .listado {
@@ -1087,7 +1033,8 @@
 }
 #encabezadoPreguntas .header .listado .enlaceHeader {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: yellow;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
   font-size: 2.5rem;
   margin-left: 10px;
 }
@@ -1095,6 +1042,11 @@
   color: blue;
   border-bottom: 2px solid blue;
   margin-top: -10px;
+}
+@media all and (max-width: 576px) {
+  #encabezadoPreguntas .header .listado .enlaceHeader {
+    font-size: 1.5rem;
+  }
 }
 #encabezadoPreguntas .contenidoHeader {
   display: flex;
@@ -1176,8 +1128,8 @@
 }
 @media all and (max-width: 576px) {
   #encabezadoContacto .header .tituloNa {
-    margin-right: 200px;
-    font-size: 1rem;
+    margin-right: 150px;
+    font-size: 2rem;
     color: blue;
   }
 }
@@ -1188,19 +1140,20 @@
 }
 #encabezadoContacto .header .listado .enlaceHeader {
   text-decoration: none;
-  color: rgb(248, 246, 246);
+  color: yellow;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
   font-size: 2.5rem;
   margin-left: 10px;
-}
-@media all and (max-width: 576px) {
-  #encabezadoContacto .header .listado .enlaceHeader {
-    color: blue;
-  }
 }
 #encabezadoContacto .header .listado .enlaceHeader:hover {
   color: blue;
   border-bottom: 2px solid blue;
   margin-top: -10px;
+}
+@media all and (max-width: 576px) {
+  #encabezadoContacto .header .listado .enlaceHeader {
+    font-size: 1.5rem;
+  }
 }
 #encabezadoContacto .contenidoHeader {
   display: flex;

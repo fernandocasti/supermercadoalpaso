@@ -13,11 +13,11 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="tituloNa vnavbar-brand" href="index.html"> AL PASO </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon navbar-expand-sm"></span>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon navbar-expand-sm "></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class=" listado navbar-nav">
+            <ul class="listado navbar-nav">
               <li class="nav-item">
                 <a class="enlaceHeader nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
@@ -39,7 +39,9 @@
       </nav>
     </div>
     <div class="contenidoHeader">
-      <h1 class="tituloHeader">AL PASO</h1>
+      <div>
+        <p class="tituloHeader"></p>
+      </div>
       <div class="content">
         <a href="https://wa.me/543476362449?text=hola%20quiero%20comprar%20por%20este%20medio" target="_blank"_msthash="1636115" _msttexthash="75387" _msthidden="1"> <img class="imagenesListado" src="imagenes/whatsapp2.png" alt="whatssap"></a>
         <a href="https://es-la.facebook.com/" target="_blank"> <img class="imagenesListado" src="imagenes/SuperFacebook.png" alt="facebook" > </a>
@@ -48,30 +50,40 @@
         <a href="https://outlook.live.com/owa/" target="_blank"> <img class="imagenesListado" src="imagenes/email1.png" alt="correo"> </a>
       </div> 
     </div>
-    <footer class="navegacion">
-      <div class="contenidoNavegacion">
-        <p class="headerHorarios">Horarios de Atención: Lunes a Viernes de 07:30 a 21:30 | Sabados de 07:30 a 13:00 15:00 a 21:30.</p>
-      </div>
-    </footer>
   </header>
   <section id="section">
-    <header class="sectionId">
+    <header class="navegacion">
+      <div class="contenidoNavegacion">
+        <p class="headerHorarios">Horarios de Atención: Lunes a Viernes de 07:30 a 21:30 | Sabados de 07:30 a 13:00 15:00 a 21:30.</p>
+        <p class="headerDireccion">Direccion: San Carlos 796, San Lorenzo</p>
+      </div>
+    </header>
+    <article class="sectionId">
       <div class="sectionServicios">
         <img class="sectionImg" src="imagenes/entregaSuper.png" alt="envios">
-        <h2 class="tituloSection">Disfruta tu tiempo</h2>
-        <p class="parrafoSection">Comprá online, y coordina el envio</p>
+        <button class="tituloSection" type="submit" data-bs-container="body" 
+        data-bs-toggle="popover" data-bs-placement="left" 
+        data-bs-content="sepa disculparnos." 
+        data-bs-original-title="" title="LISTA EN PROCESO">Envios a domicilio</button>
+        <p class="parrafoSection">Comprá online, envios a coordinar.</p>
       </div>
       <div class="sectionServicios">
         <img class="sectionImg" src="imagenes/promocionesSuper.png" alt="Promociones">
-        <h2 class="tituloSection">Ofertas exclusivas</h2>
-        <p class="parrafoSection">En nuestras tiendas online</p>
+        <button class="tituloSection" type="submit" data-bs-container="body" 
+        data-bs-toggle="popover" data-bs-placement="left" 
+        data-bs-content="sepa disculparnos." 
+        data-bs-original-title="" title="LISTA EN PROCESO">Ofertas exclusivas</button>
+        <p class="parrafoSection">En nuestra tienda online</p>
       </div>
       <div class="sectionServicios">
         <img class="sectionImg" src="imagenes/tarjetas.png" alt="tarjetas">
-        <h2 class="tituloSection">Todas las tarjetas</h2>
-        <p class="parrafoSection">Para mayor comodidad</p>
+        <button class="tituloSection" type="submit" data-bs-container="body" 
+        data-bs-toggle="popover" data-bs-placement="left" 
+        data-bs-content="sepa disculparnos." 
+        data-bs-original-title="" title="LISTA EN PROCESO">Todas las tarjeta</button>
+        <p class="parrafoSection">Aceptamos todos los medios de pagos</p>
       </div>
-    </header>
+    </article>
     <div class="marcasNustras">
       <div class="Marcas">
         <h3 class="tituloMarcas">¡NUESTRAS MARCAS!</h3>
@@ -153,5 +165,12 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+      		var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+    </script>
 </body>
 </html>
