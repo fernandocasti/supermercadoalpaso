@@ -306,8 +306,8 @@
     @media all and (max-width: 1200px) {
         grid-template-columns: auto auto;
     }
-    @media all and(max-width: 1000px){
-        grid-template-columns: auto auto;
+    @media all and(max-width: 1080px){
+        grid-template-columns: auto;
     }
     @media all and (max-width: 576px){
         grid-template-columns: auto;
@@ -322,8 +322,8 @@
             margin: 1rem;
         }
         @media all and (max-width: 576px) {
-            font-size: -30px;
-            margin: 2rem;
+            font-size: 1rem;
+            margin: 1rem;
         }
         .imgServicios{
             width: 30rem;
@@ -343,7 +343,7 @@
                 @include subtitle;
                 border-bottom: 1px solid $azul;
                 @media all and (max-width: 576px) {
-                    font-size: 20px;
+                    font-size: 1.5rem;
             }
             .parrafoServicio{
                 @include parrafoS;
@@ -413,7 +413,7 @@
                     border-bottom: 1px solid $azul;
                     margin-bottom: 20px;
                     @media all and(max-width: 576px){
-                        font-size: 1rem;
+                        font-size: 2rem;
                     }
                 }
                 .inputContacto{
