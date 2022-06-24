@@ -422,20 +422,10 @@
   display: grid;
   grid-template-columns: auto auto;
   background-color: #f1f2f6;
-  margin: 10px;
 }
 @media all and (max-width: 1200px) {
   #sectionServicios {
-    grid-template-columns: auto auto;
-  }
-}
-@media all and (max-width: 1080px) {
-  #sectionServicios {
-    grid-template-columns: auto;
-  }
-}
-@media all and (max-width: 576px) {
-  #sectionServicios {
+    display: grid;
     grid-template-columns: auto;
   }
 }
@@ -583,6 +573,7 @@
 #sectionContacto .formularioContacto .contenedorContacto, #sectionContacto .formularioContacto .datosContacto {
   background-color: #f1f2f6;
   opacity: 0.9;
+  padding: 2rem;
 }
 #sectionContacto .formularioContacto .contenedorContacto .conteinerContacto, #sectionContacto .formularioContacto .contenedorContacto .contactosDatos, #sectionContacto .formularioContacto .contenedorContacto .redesSociales, #sectionContacto .formularioContacto .datosContacto .conteinerContacto, #sectionContacto .formularioContacto .datosContacto .contactosDatos, #sectionContacto .formularioContacto .datosContacto .redesSociales {
   display: flex;
@@ -600,7 +591,7 @@
 }
 @media all and (max-width: 576px) {
   #sectionContacto .formularioContacto .contenedorContacto .conteinerContacto .titleContacto, #sectionContacto .formularioContacto .contenedorContacto .contactosDatos .titleContacto, #sectionContacto .formularioContacto .contenedorContacto .redesSociales .titleContacto, #sectionContacto .formularioContacto .datosContacto .conteinerContacto .titleContacto, #sectionContacto .formularioContacto .datosContacto .contactosDatos .titleContacto, #sectionContacto .formularioContacto .datosContacto .redesSociales .titleContacto {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 #sectionContacto .formularioContacto .contenedorContacto .conteinerContacto .inputContacto, #sectionContacto .formularioContacto .contenedorContacto .contactosDatos .inputContacto, #sectionContacto .formularioContacto .contenedorContacto .redesSociales .inputContacto, #sectionContacto .formularioContacto .datosContacto .conteinerContacto .inputContacto, #sectionContacto .formularioContacto .datosContacto .contactosDatos .inputContacto, #sectionContacto .formularioContacto .datosContacto .redesSociales .inputContacto {

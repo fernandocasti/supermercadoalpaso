@@ -302,14 +302,8 @@
     display: grid;
     grid-template-columns: auto auto;
     background-color: $blanco-fondo;
-    margin: 10px;
-    @media all and (max-width: 1200px) {
-        grid-template-columns: auto auto;
-    }
-    @media all and(max-width: 1080px){
-        grid-template-columns: auto;
-    }
-    @media all and (max-width: 576px){
+    @media all and(max-width: 1200px){
+        display: grid;
         grid-template-columns: auto;
     }
     .contenedorServicio{
@@ -403,6 +397,7 @@
         .contenedorContacto, .datosContacto{
             background-color: $blanco-fondo;
             opacity: 0.9;
+            padding: 2rem;
             .conteinerContacto, .contactosDatos, .redesSociales{
                 display: flex;
                 flex-direction: column;
@@ -413,7 +408,7 @@
                     border-bottom: 1px solid $azul;
                     margin-bottom: 20px;
                     @media all and(max-width: 576px){
-                        font-size: 2rem;
+                        font-size: 1.8rem;
                     }
                 }
                 .inputContacto{
