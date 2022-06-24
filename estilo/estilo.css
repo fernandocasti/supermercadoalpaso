@@ -429,9 +429,9 @@
     grid-template-columns: auto auto;
   }
 }
-@media all and (max-width: 1040px) {
+@media all and (max-width: 1000px) {
   #sectionServicios {
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
   }
 }
 @media all and (max-width: 576px) {
@@ -495,18 +495,11 @@
 
 /*preguntas*/
 .bodyPreguntas {
-  background-image: url(../imagenes/preguntas.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
+  background-color: #f1f2f6;
 }
 .bodyPreguntas #contenedorAcordeon {
-  width: 70%;
-  margin: 0 0 4% 15%;
-  z-index: 10;
-  padding: 5rem;
+  width: 90%;
+  margin: 0 0 4% 5%;
 }
 .bodyPreguntas #contenedorAcordeon .contenedorItem {
   border-bottom: 2px solid #3c40c6;
@@ -574,13 +567,13 @@
 }
 @media all and (max-width: 576px) {
   #sectionContacto .contenedorTitulo .tituloContacto {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 }
 #sectionContacto .formularioContacto {
   display: flex;
   justify-content: space-evenly;
-  padding: 5rem;
+  padding: 5rem 1rem;
 }
 @media all and (max-width: 768px) {
   #sectionContacto .formularioContacto {
@@ -607,7 +600,7 @@
 }
 @media all and (max-width: 576px) {
   #sectionContacto .formularioContacto .contenedorContacto .conteinerContacto .titleContacto, #sectionContacto .formularioContacto .contenedorContacto .contactosDatos .titleContacto, #sectionContacto .formularioContacto .contenedorContacto .redesSociales .titleContacto, #sectionContacto .formularioContacto .datosContacto .conteinerContacto .titleContacto, #sectionContacto .formularioContacto .datosContacto .contactosDatos .titleContacto, #sectionContacto .formularioContacto .datosContacto .redesSociales .titleContacto {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 #sectionContacto .formularioContacto .contenedorContacto .conteinerContacto .inputContacto, #sectionContacto .formularioContacto .contenedorContacto .contactosDatos .inputContacto, #sectionContacto .formularioContacto .contenedorContacto .redesSociales .inputContacto, #sectionContacto .formularioContacto .datosContacto .conteinerContacto .inputContacto, #sectionContacto .formularioContacto .datosContacto .contactosDatos .inputContacto, #sectionContacto .formularioContacto .datosContacto .redesSociales .inputContacto {
@@ -1025,7 +1018,7 @@
 #encabezadoPreguntas {
   background-image: url(../imagenes/preguntas.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   width: 100%;
   height: auto;

@@ -306,8 +306,8 @@
     @media all and (max-width: 1200px) {
         grid-template-columns: auto auto;
     }
-    @media all and(max-width: 1040px){
-        grid-template-columns: auto;
+    @media all and(max-width: 1000px){
+        grid-template-columns: auto auto;
     }
     @media all and (max-width: 576px){
         grid-template-columns: auto;
@@ -356,17 +356,10 @@
 
                                 /*preguntas*/
 .bodyPreguntas{
-    background-image: url(../imagenes/preguntas.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
+   background-color: $blanco-fondo;
     #contenedorAcordeon{
-    width: 70%;
-    margin: 0 0 4% 15%;
-    z-index: 10;
-    padding: 5rem;
+    width: 90%;
+    margin: 0 0 4% 5%;
         .contenedorItem{
             border-bottom: 2px solid $azul;
             background-color: $amarillo-transparent;
@@ -396,14 +389,14 @@
                 100%{color: $azul}
             }
             @media all and (max-width: 576px){
-                font-size: 2.2rem;
+                font-size: 2.5rem;
             }
         }
     }
     .formularioContacto{
         display: flex;
         justify-content: space-evenly;
-        padding: 5rem;
+        padding: 5rem 1rem;
         @media all and (max-width: 768px){
             flex-direction: column;
         }
@@ -420,7 +413,7 @@
                     border-bottom: 1px solid $azul;
                     margin-bottom: 20px;
                     @media all and(max-width: 576px){
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                     }
                 }
                 .inputContacto{
