@@ -1,0 +1,18 @@
+@mixin subtitulos{
+    color: $azul;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid $azul;
+}
+@mixin parrafoS {
+    color: $negro;
+    font-size: 1rem;
+    text-align: center;
+}
+@mixin subtitle{
+    color: $azul;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}

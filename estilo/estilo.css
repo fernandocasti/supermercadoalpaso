@@ -1,24 +1,24 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? family=Libre+Franklin:ital,wght@0,100;0,900;1,200;1,500&display=swap");
 * {
-  font-family: "Roboto Serif", serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 /* esto es informacion de todas las pagina*/
 .contenidoNavegacion {
   flex-direction: row;
   width: 100%;
-  background-color: rgb(2, 27, 250);
+  background-color: #575fcf;
 }
 .contenidoNavegacion .headerHorarios {
   font-size: 1.8rem;
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   text-align: center;
   padding: 1rem;
 }
 .contenidoNavegacion .headerHorarios:hover {
-  color: rgb(0, 0, 0);
-  background-color: rgb(2, 27, 250);
+  color: #1e272e;
+  background-color: #575fcf;
 }
 @media all and (max-width: 576px) {
   .contenidoNavegacion .headerHorarios {
@@ -26,15 +26,15 @@
   }
 }
 .contenidoNavegacion .headerDireccion {
-  background-color: rgba(253, 19, 19, 0.932);
+  background-color: #f53b57;
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
-  color: rgb(248, 246, 246);
+  color: #ffffff;
   padding: 1rem;
 }
 .contenidoNavegacion .headerDireccion:hover {
-  color: blue;
+  color: #3c40c6;
 }
 @media all and (max-width: 576px) {
   .contenidoNavegacion .headerDireccion {
@@ -44,13 +44,13 @@
 
 /*seccion index*/
 #section {
-  background-color: rgb(236, 236, 236);
+  background-color: #f1f2f6;
 }
 #section .sectionId {
   display: flex;
   justify-content: space-evenly;
 }
-@media all and (max-width: 576px) {
+@media all and (max-width: 992px) {
   #section .sectionId {
     flex-direction: column;
     margin: 1px;
@@ -76,30 +76,30 @@
 }
 @-webkit-keyframes fondoAnimacion {
   0% {
-    background-color: rgba(255, 255, 0, 0.822);
+    background-color: #ffdd59;
   }
   30% {
-    background-color: rgba(253, 19, 19, 0.932);
+    background-color: #f53b57;
   }
   60% {
-    background-color: rgba(253, 19, 19, 0.932);
+    background-color: #f53b57;
   }
   100% {
-    background-color: rgba(255, 255, 0, 0.822);
+    background-color: #ffdd59;
   }
 }
 @keyframes fondoAnimacion {
   0% {
-    background-color: rgba(255, 255, 0, 0.822);
+    background-color: #ffdd59;
   }
   30% {
-    background-color: rgba(253, 19, 19, 0.932);
+    background-color: #f53b57;
   }
   60% {
-    background-color: rgba(253, 19, 19, 0.932);
+    background-color: #f53b57;
   }
   100% {
-    background-color: rgba(255, 255, 0, 0.822);
+    background-color: #ffdd59;
   }
 }
 @media all and (max-width: 576px) {
@@ -114,6 +114,12 @@
   margin: 20px;
   padding: 2px;
 }
+@media all and (max-width: 992px) {
+  #section .sectionServicios .sectionImg {
+    width: 23%;
+    height: 23%;
+  }
+}
 @media all and (max-width: 576px) {
   #section .sectionServicios .sectionImg {
     width: 20%;
@@ -121,11 +127,11 @@
   }
 }
 #section .sectionServicios .tituloSection {
-  color: blue;
+  color: #3c40c6;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid #3c40c6;
   border: none;
   background: none;
 }
@@ -136,25 +142,25 @@
   }
 }
 #section .sectionServicios .parrafoSection {
-  color: rgb(0, 0, 0);
+  color: #1e272e;
   font-size: 1rem;
   text-align: center;
 }
 #section .marcasNustras {
-  background-color: rgb(211, 211, 211);
+  background-color: #d2dae2;
 }
 #section .marcasNustras .Marcas {
-  background-color: rgb(236, 236, 236);
+  background-color: #f1f2f6;
   opacity: 0.9;
   margin-top: 10px;
   text-align: center;
 }
 #section .marcasNustras .Marcas .tituloMarcas {
-  color: blue;
+  color: #3c40c6;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid #3c40c6;
   font-size: 4rem;
   margin-top: 10px;
   align-items: center;
@@ -188,6 +194,13 @@
   height: 80%;
   margin: 10px 100px 10px 140px;
 }
+@media all and (max-width: 992px) {
+  #section .marcasNustras #mapa {
+    width: 70%;
+    height: auto;
+    margin: 30px 40px 30px 140px;
+  }
+}
 @media all and (max-width: 576px) {
   #section .marcasNustras #mapa {
     width: 80%;
@@ -200,14 +213,14 @@
   text-align: center;
 }
 #section .marcasNustras #mapa .titulomapa .tituloMarcas {
-  color: blue;
+  color: #3c40c6;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid #3c40c6;
   font-size: 2rem;
   padding: 0.5rem;
-  color: blue;
+  color: #3c40c6;
 }
 @media all and (max-width: 576px) {
   #section .marcasNustras #mapa .titulomapa .tituloMarcas {
@@ -217,20 +230,20 @@
 
 /*pie de pagina, de todas las paginas*/
 #sectionSegundo {
-  background-color: blue;
+  background-color: #3c40c6;
 }
 #sectionSegundo .tituloDelFooter {
-  color: rgb(248, 246, 246);
+  color: #ffffff;
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
   margin: 10px;
-  border-bottom: 2px solid rgb(248, 246, 246);
+  border-bottom: 2px solid #ffffff;
 }
 @media all and (max-width: 576px) {
   #sectionSegundo .tituloDelFooter {
     font-size: 1.7rem;
-    border-bottom: 2px solid rgb(248, 246, 246);
+    border-bottom: 2px solid #ffffff;
   }
 }
 #sectionSegundo .headerFooter {
@@ -248,7 +261,7 @@
 }
 #sectionSegundo .headerFooter .listaDelFooter .enlacesFooter {
   text-decoration: none;
-  color: rgb(248, 246, 246);
+  color: #ffffff;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -268,15 +281,15 @@
 }
 
 #footerDelFooter {
-  background-color: rgb(0, 0, 0);
+  background-color: #1e272e;
 }
 #footerDelFooter .sectionFooter {
-  background-color: rgb(2, 27, 250);
+  background-color: #575fcf;
   display: flex;
   justify-content: space-evenly;
 }
 #footerDelFooter .sectionFooter .logoDelFooter {
-  color: rgb(248, 246, 246);
+  color: #ffffff;
   font-size: 4rem;
   font-weight: bold;
   font-style: italic;
@@ -292,42 +305,42 @@
 }
 @-webkit-keyframes cambioColor {
   0% {
-    color: rgb(0, 0, 0);
+    color: #1e272e;
   }
   20% {
-    color: rgb(248, 246, 246);
+    color: #ffffff;
   }
   40% {
-    color: rgba(253, 19, 19, 0.932);
+    color: #f53b57;
   }
   60% {
-    color: yellow;
+    color: #ffd32a;
   }
   80% {
-    color: blue;
+    color: #3c40c6;
   }
   100% {
-    color: rgb(0, 0, 0);
+    color: #1e272e;
   }
 }
 @keyframes cambioColor {
   0% {
-    color: rgb(0, 0, 0);
+    color: #1e272e;
   }
   20% {
-    color: rgb(248, 246, 246);
+    color: #ffffff;
   }
   40% {
-    color: rgba(253, 19, 19, 0.932);
+    color: #f53b57;
   }
   60% {
-    color: yellow;
+    color: #ffd32a;
   }
   80% {
-    color: blue;
+    color: #3c40c6;
   }
   100% {
-    color: rgb(0, 0, 0);
+    color: #1e272e;
   }
 }
 @media all and (max-width: 576px) {
@@ -336,7 +349,7 @@
   }
 }
 #footerDelFooter .desarrollador {
-  background-color: rgb(248, 246, 246);
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   padding-top: 2rem;
@@ -346,7 +359,7 @@
   height: 30px;
 }
 #footerDelFooter .desarrollador .parrafoCopy {
-  color: rgb(0, 0, 0);
+  color: #1e272e;
   font-size: 1.5rem;
   margin: 0 0 20px 10px;
 }
@@ -361,7 +374,12 @@
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-evenly;
-  background-color: rgb(236, 236, 236);
+  background-color: #f1f2f6;
+}
+@media all and (max-width: 992px) {
+  #sectionProducto {
+    grid-template-columns: auto auto;
+  }
 }
 @media all and (max-width: 576px) {
   #sectionProducto {
@@ -383,18 +401,18 @@
   margin: 2rem 4rem;
 }
 #sectionProducto .contenedorProductos .subPro {
-  color: blue;
+  color: #3c40c6;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
 }
 #sectionProducto .contenedorProductos .botonProducto {
-  background-color: rgb(2, 27, 250);
-  color: rgb(248, 246, 246);
+  background-color: #575fcf;
+  color: #ffffff;
   font-weight: bold;
   font-size: 1rem;
   border: none;
-  border-bottom: 1px solid rgb(248, 246, 246);
+  border-bottom: 1px solid #ffffff;
   margin: 0.5rem;
   padding: 0.2rem 1rem;
 }
@@ -403,10 +421,15 @@
 #sectionServicios {
   display: grid;
   grid-template-columns: auto auto;
-  background-color: rgb(236, 236, 236);
+  background-color: #f1f2f6;
   margin: 10px;
 }
-@media all and (max-width: 980px) {
+@media all and (max-width: 1200px) {
+  #sectionServicios {
+    grid-template-columns: auto auto;
+  }
+}
+@media all and (max-width: 1040px) {
   #sectionServicios {
     grid-template-columns: auto;
   }
@@ -421,7 +444,7 @@
   align-items: center;
   flex-direction: column-reverse;
   margin: 5rem;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid #1e272e;
 }
 @media all and (max-width: 1250px) {
   #sectionServicios .contenedorServicio {
@@ -452,11 +475,11 @@
   margin: 10px;
 }
 #sectionServicios .contenedorServicio .conteinerServicio .tituloServicios {
-  color: blue;
+  color: #3c40c6;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid #3c40c6;
 }
 @media all and (max-width: 576px) {
   #sectionServicios .contenedorServicio .conteinerServicio .tituloServicios {
@@ -464,7 +487,7 @@
   }
 }
 #sectionServicios .contenedorServicio .conteinerServicio .tituloServicios .parrafoServicio {
-  color: rgb(0, 0, 0);
+  color: #1e272e;
   font-size: 1rem;
   text-align: center;
   text-align: left;
@@ -476,34 +499,32 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
-  opacity: 0.9;
 }
 .bodyPreguntas #contenedorAcordeon {
-  display: flex;
-  flex-direction: column;
   width: 70%;
   margin: 0 0 4% 15%;
   z-index: 10;
+  padding: 5rem;
 }
 .bodyPreguntas #contenedorAcordeon .contenedorItem {
-  border-bottom: 2px solid blue;
-  background-color: rgba(255, 255, 0, 0.822);
+  border-bottom: 2px solid #3c40c6;
+  background-color: #ffdd59;
 }
 
 /*contacto*/
 #sectionContacto {
-  opacity: 0.8;
+  background-color: #808e9b;
 }
 #sectionContacto .contenedorTitulo {
   display: flex;
   justify-content: center;
-  padding-top: 2rem;
+  padding-top: 3rem;
   z-index: 1;
 }
 #sectionContacto .contenedorTitulo .tituloContacto {
-  color: blue;
+  color: #3c40c6;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
@@ -519,35 +540,47 @@
 }
 @-webkit-keyframes fondo {
   0% {
-    color: blue;
+    color: #3c40c6;
   }
-  50% {
-    color: rgba(253, 19, 19, 0.932);
+  30% {
+    color: #f53b57;
+  }
+  60% {
+    color: #ffd32a;
+  }
+  90% {
+    color: #808e9b;
   }
   100% {
-    color: blue;
+    color: #3c40c6;
   }
 }
 @keyframes fondo {
   0% {
-    color: blue;
+    color: #3c40c6;
   }
-  50% {
-    color: rgba(253, 19, 19, 0.932);
+  30% {
+    color: #f53b57;
+  }
+  60% {
+    color: #ffd32a;
+  }
+  90% {
+    color: #808e9b;
   }
   100% {
-    color: blue;
+    color: #3c40c6;
   }
 }
 @media all and (max-width: 576px) {
   #sectionContacto .contenedorTitulo .tituloContacto {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 #sectionContacto .formularioContacto {
   display: flex;
   justify-content: space-evenly;
-  margin: 2rem;
+  padding: 5rem;
 }
 @media all and (max-width: 768px) {
   #sectionContacto .formularioContacto {
@@ -555,7 +588,7 @@
   }
 }
 #sectionContacto .formularioContacto .contenedorContacto, #sectionContacto .formularioContacto .datosContacto {
-  background-color: rgb(236, 236, 236);
+  background-color: #f1f2f6;
   opacity: 0.9;
 }
 #sectionContacto .formularioContacto .contenedorContacto .conteinerContacto, #sectionContacto .formularioContacto .contenedorContacto .contactosDatos, #sectionContacto .formularioContacto .contenedorContacto .redesSociales, #sectionContacto .formularioContacto .datosContacto .conteinerContacto, #sectionContacto .formularioContacto .datosContacto .contactosDatos, #sectionContacto .formularioContacto .datosContacto .redesSociales {
@@ -564,32 +597,32 @@
   margin: 2rem;
 }
 #sectionContacto .formularioContacto .contenedorContacto .conteinerContacto .titleContacto, #sectionContacto .formularioContacto .contenedorContacto .contactosDatos .titleContacto, #sectionContacto .formularioContacto .contenedorContacto .redesSociales .titleContacto, #sectionContacto .formularioContacto .datosContacto .conteinerContacto .titleContacto, #sectionContacto .formularioContacto .datosContacto .contactosDatos .titleContacto, #sectionContacto .formularioContacto .datosContacto .redesSociales .titleContacto {
-  color: blue;
+  color: #3c40c6;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
   z-index: 2;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid #3c40c6;
   margin-bottom: 20px;
 }
 @media all and (max-width: 576px) {
   #sectionContacto .formularioContacto .contenedorContacto .conteinerContacto .titleContacto, #sectionContacto .formularioContacto .contenedorContacto .contactosDatos .titleContacto, #sectionContacto .formularioContacto .contenedorContacto .redesSociales .titleContacto, #sectionContacto .formularioContacto .datosContacto .conteinerContacto .titleContacto, #sectionContacto .formularioContacto .datosContacto .contactosDatos .titleContacto, #sectionContacto .formularioContacto .datosContacto .redesSociales .titleContacto {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
 #sectionContacto .formularioContacto .contenedorContacto .conteinerContacto .inputContacto, #sectionContacto .formularioContacto .contenedorContacto .contactosDatos .inputContacto, #sectionContacto .formularioContacto .contenedorContacto .redesSociales .inputContacto, #sectionContacto .formularioContacto .datosContacto .conteinerContacto .inputContacto, #sectionContacto .formularioContacto .datosContacto .contactosDatos .inputContacto, #sectionContacto .formularioContacto .datosContacto .redesSociales .inputContacto {
   background: none;
   border: none;
-  border-bottom: 2px solid rgb(248, 246, 246);
-  color: rgb(0, 0, 0);
+  border-bottom: 2px solid #ffffff;
+  color: #1e272e;
   margin: 1px;
 }
 #sectionContacto .formularioContacto .contenedorContacto .conteinerContacto .inputContacto:focus, #sectionContacto .formularioContacto .contenedorContacto .contactosDatos .inputContacto:focus, #sectionContacto .formularioContacto .contenedorContacto .redesSociales .inputContacto:focus, #sectionContacto .formularioContacto .datosContacto .conteinerContacto .inputContacto:focus, #sectionContacto .formularioContacto .datosContacto .contactosDatos .inputContacto:focus, #sectionContacto .formularioContacto .datosContacto .redesSociales .inputContacto:focus {
-  background-color: rgb(236, 236, 236);
+  background-color: #f1f2f6;
 }
 #sectionContacto .formularioContacto .contenedorContacto .enlaceContacto, #sectionContacto .formularioContacto .datosContacto .enlaceContacto {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #1e272e;
   text-align: left;
 }
 @media all and (max-width: 576px) {
@@ -603,8 +636,8 @@
   margin: 0.5rem;
 }
 #sectionContacto .formularioContacto .contenedorContacto .botonContacto, #sectionContacto .formularioContacto .datosContacto .botonContacto {
-  color: rgb(248, 246, 246);
-  background-color: blue;
+  color: #ffffff;
+  background-color: #3c40c6;
   box-shadow: 5px 1px 5px;
   margin-top: 10px;
 }
@@ -629,10 +662,10 @@
   z-index: 10;
 }
 #encabezado .header .tituloNa {
-  color: rgb(0, 0, 0);
+  color: #1e272e;
   text-decoration: none;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-style: italic;
   margin-right: 350px;
   -webkit-animation-name: colores;
@@ -646,42 +679,49 @@
 }
 @-webkit-keyframes colores {
   0% {
-    color: rgb(0, 0, 0);
+    color: #1e272e;
   }
   20% {
-    color: rgb(248, 246, 246);
+    color: #ffffff;
   }
   40% {
-    color: rgba(253, 19, 19, 0.932);
+    color: #f53b57;
   }
   60% {
-    color: yellow;
+    color: #ffd32a;
   }
   80% {
-    color: blue;
+    color: #3c40c6;
   }
   100% {
-    color: rgb(0, 0, 0);
+    color: #1e272e;
   }
 }
 @keyframes colores {
   0% {
-    color: rgb(0, 0, 0);
+    color: #1e272e;
   }
   20% {
-    color: rgb(248, 246, 246);
+    color: #ffffff;
   }
   40% {
-    color: rgba(253, 19, 19, 0.932);
+    color: #f53b57;
   }
   60% {
-    color: yellow;
+    color: #ffd32a;
   }
   80% {
-    color: blue;
+    color: #3c40c6;
   }
   100% {
-    color: rgb(0, 0, 0);
+    color: #1e272e;
+  }
+}
+@media all and (min-width: 1200px) {
+  #encabezado .header .tituloNa {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-right: 200px;
   }
 }
 @media all and (max-width: 576px) {
@@ -697,15 +737,20 @@
 }
 #encabezado .header .listado .enlaceHeader {
   text-decoration: none;
-  color: yellow;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  color: #ffd32a;
+  text-shadow: 2px 2px 2px #1e272e;
   font-size: 2.5rem;
   margin-left: 10px;
 }
 #encabezado .header .listado .enlaceHeader:hover {
-  color: blue;
-  border-bottom: 2px solid blue;
+  color: #3c40c6;
+  border-bottom: 2px solid #3c40c6;
   margin-top: -15px;
+}
+@media all and (max-width: 1200px) {
+  #encabezado .header .listado .enlaceHeader {
+    font-size: 1.3rem;
+  }
 }
 @media all and (max-width: 576px) {
   #encabezado .header .listado .enlaceHeader {
@@ -720,22 +765,8 @@
 }
 #encabezado .contenidoHeader .tituloHeader {
   font-size: 3rem;
-  text-align: center;
-  font-weight: bold;
-  font-style: italic;
-  color: yellow;
   margin-bottom: 1rem;
   padding-top: 20rem;
-  -webkit-animation-name: tamaño;
-          animation-name: tamaño;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
 }
 #encabezado .contenidoHeader .content {
   display: flex;
@@ -770,10 +801,10 @@
   z-index: 10;
 }
 #encabezadoPoducto .header .tituloNa {
-  color: rgb(248, 246, 246);
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-style: italic;
   margin-right: 350px;
   z-index: 1;
@@ -788,22 +819,29 @@
 }
 @keyframes colores {
   0% {
-    color: rgb(0, 0, 0);
+    color: #1e272e;
   }
   20% {
-    color: rgb(248, 246, 246);
+    color: #ffffff;
   }
   40% {
-    color: rgba(253, 19, 19, 0.932);
+    color: #f53b57;
   }
   60% {
-    color: yellow;
+    color: #ffd32a;
   }
   80% {
-    color: blue;
+    color: #3c40c6;
   }
   100% {
-    color: rgb(0, 0, 0);
+    color: #1e272e;
+  }
+}
+@media all and (min-width: 1200px) {
+  #encabezadoPoducto .header .tituloNa {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-right: 200px;
   }
 }
 @media all and (max-width: 576px) {
@@ -820,15 +858,20 @@
 }
 #encabezadoPoducto .header .listado .enlaceHeader {
   text-decoration: none;
-  color: yellow;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  color: #ffd32a;
+  text-shadow: 2px 2px 2px #1e272e;
   font-size: 2.5rem;
   margin-left: 10px;
 }
 #encabezadoPoducto .header .listado .enlaceHeader:hover {
-  color: blue;
-  border-bottom: 2px solid blue;
+  color: #3c40c6;
+  border-bottom: 2px solid #3c40c6;
   margin-top: -15px;
+}
+@media all and (max-width: 1200px) {
+  #encabezadoPoducto .header .listado .enlaceHeader {
+    font-size: 1.3rem;
+  }
 }
 @media all and (max-width: 576px) {
   #encabezadoPoducto .header .listado .enlaceHeader {
@@ -877,10 +920,10 @@
   z-index: 10;
 }
 #encabezadoServicio .header .tituloNa {
-  color: blue;
+  color: #3c40c6;
   text-decoration: none;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-style: italic;
   margin-right: 350px;
   -webkit-animation-name: colores;
@@ -894,22 +937,29 @@
 }
 @keyframes colores {
   0% {
-    color: rgb(0, 0, 0);
+    color: #1e272e;
   }
   20% {
-    color: rgb(248, 246, 246);
+    color: #ffffff;
   }
   40% {
-    color: rgba(253, 19, 19, 0.932);
+    color: #f53b57;
   }
   60% {
-    color: yellow;
+    color: #ffd32a;
   }
   80% {
-    color: blue;
+    color: #3c40c6;
   }
   100% {
-    color: rgb(0, 0, 0);
+    color: #1e272e;
+  }
+}
+@media all and (min-width: 1200px) {
+  #encabezadoServicio .header .tituloNa {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-right: 200px;
   }
 }
 @media all and (max-width: 576px) {
@@ -925,21 +975,24 @@
 }
 #encabezadoServicio .header .listado .enlaceHeader {
   text-decoration: none;
-  color: yellow;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  color: #ffd32a;
+  text-shadow: 2px 2px 2px #1e272e;
   font-size: 2.5rem;
   margin-left: 10px;
 }
 #encabezadoServicio .header .listado .enlaceHeader:hover {
-  color: blue;
-  border-bottom: 2px solid blue;
+  color: #3c40c6;
+  border-bottom: 2px solid #3c40c6;
   margin-top: -15px;
+}
+@media all and (max-width: 1200px) {
+  #encabezadoServicio .header .listado .enlaceHeader {
+    font-size: 1.3rem;
+  }
 }
 @media all and (max-width: 576px) {
   #encabezadoServicio .header .listado .enlaceHeader {
     font-size: 1.5rem;
-    color: yellow;
-    text-shadow: 2px 2px 2px rgb(0, 0, 0);
   }
 }
 #encabezadoServicio .contenidoHeader {
@@ -974,8 +1027,6 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  -o-object-fit: contain;
-     object-fit: contain;
   width: 100%;
   height: auto;
 }
@@ -985,10 +1036,10 @@
   z-index: 10;
 }
 #encabezadoPreguntas .header .tituloNa {
-  color: rgb(0, 0, 0);
+  color: #1e272e;
   text-decoration: none;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-style: italic;
   margin-right: 350px;
   -webkit-animation-name: colores;
@@ -1002,22 +1053,29 @@
 }
 @keyframes colores {
   0% {
-    color: rgb(0, 0, 0);
+    color: #1e272e;
   }
   20% {
-    color: rgb(248, 246, 246);
+    color: #ffffff;
   }
   40% {
-    color: rgba(253, 19, 19, 0.932);
+    color: #f53b57;
   }
   60% {
-    color: yellow;
+    color: #ffd32a;
   }
   80% {
-    color: blue;
+    color: #3c40c6;
   }
   100% {
-    color: rgb(0, 0, 0);
+    color: #1e272e;
+  }
+}
+@media all and (min-width: 1200px) {
+  #encabezadoPreguntas .header .tituloNa {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-right: 200px;
   }
 }
 @media all and (max-width: 576px) {
@@ -1033,15 +1091,20 @@
 }
 #encabezadoPreguntas .header .listado .enlaceHeader {
   text-decoration: none;
-  color: yellow;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  color: #ffd32a;
+  text-shadow: 2px 2px 2px #1e272e;
   font-size: 2.5rem;
   margin-left: 10px;
 }
 #encabezadoPreguntas .header .listado .enlaceHeader:hover {
-  color: blue;
-  border-bottom: 2px solid blue;
+  color: #3c40c6;
+  border-bottom: 2px solid #3c40c6;
   margin-top: -10px;
+}
+@media all and (max-width: 1200px) {
+  #encabezadoPreguntas .header .listado .enlaceHeader {
+    font-size: 1.3rem;
+  }
 }
 @media all and (max-width: 576px) {
   #encabezadoPreguntas .header .listado .enlaceHeader {
@@ -1055,7 +1118,7 @@
   z-index: 1;
 }
 #encabezadoPreguntas .contenidoHeader .tituloHeader {
-  padding: 10rem;
+  padding: 12.5rem;
 }
 #encabezadoPreguntas .contenidoHeader .content {
   display: flex;
@@ -1091,10 +1154,10 @@
   z-index: 10;
 }
 #encabezadoContacto .header .tituloNa {
-  color: rgb(0, 0, 0);
+  color: #1e272e;
   text-decoration: none;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-style: italic;
   margin-right: 350px;
   -webkit-animation-name: colores;
@@ -1108,29 +1171,35 @@
 }
 @keyframes colores {
   0% {
-    color: rgb(0, 0, 0);
+    color: #1e272e;
   }
   20% {
-    color: rgb(248, 246, 246);
+    color: #ffffff;
   }
   40% {
-    color: rgba(253, 19, 19, 0.932);
+    color: #f53b57;
   }
   60% {
-    color: yellow;
+    color: #ffd32a;
   }
   80% {
-    color: blue;
+    color: #3c40c6;
   }
   100% {
-    color: rgb(0, 0, 0);
+    color: #1e272e;
+  }
+}
+@media all and (min-width: 1200px) {
+  #encabezadoContacto .header .tituloNa {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-right: 200px;
   }
 }
 @media all and (max-width: 576px) {
   #encabezadoContacto .header .tituloNa {
     margin-right: 150px;
     font-size: 2rem;
-    color: blue;
   }
 }
 #encabezadoContacto .header .listado {
@@ -1140,15 +1209,20 @@
 }
 #encabezadoContacto .header .listado .enlaceHeader {
   text-decoration: none;
-  color: yellow;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  color: #ffd32a;
+  text-shadow: 2px 2px 2px #1e272e;
   font-size: 2.5rem;
   margin-left: 10px;
 }
 #encabezadoContacto .header .listado .enlaceHeader:hover {
-  color: blue;
-  border-bottom: 2px solid blue;
+  color: #3c40c6;
+  border-bottom: 2px solid #3c40c6;
   margin-top: -10px;
+}
+@media all and (max-width: 1200px) {
+  #encabezadoContacto .header .listado .enlaceHeader {
+    font-size: 1.3rem;
+  }
 }
 @media all and (max-width: 576px) {
   #encabezadoContacto .header .listado .enlaceHeader {

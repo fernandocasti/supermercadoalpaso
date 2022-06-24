@@ -17,7 +17,7 @@
             color: $negro;
             text-decoration: none;
             font-weight: bold;
-            font-size: 2.5rem;
+            font-size: 1.8rem;
             font-style: italic;
             margin-right: 350px;
             animation-name: colores;
@@ -31,6 +31,11 @@
                 60%{color: $amarillo}
                 80%{color: $azul}
                 100%{color: $negro}
+            }
+            @media all and(min-width: 1200px){
+                font-size: 1.5rem;
+                text-align: center;
+                margin-right: 200px;
             }
             @media all and (max-width: 576px){
                 margin-right: 150px;
@@ -52,6 +57,9 @@
                     border-bottom:2px solid $azul;
                     margin-top: -15px;
                 }
+                @media all and (max-width: 1200px){
+                    font-size: 1.3rem;
+                }
                 @media all and (max-width: 576px){
                     font-size: 1.5rem;
                 }
@@ -65,17 +73,8 @@
         z-index: 1;
         .tituloHeader{
             font-size: 3rem;
-            text-align: center;
-            font-weight: bold;
-            font-style: italic;
-            color: $amarillo;
             margin-bottom: 1rem;
             padding-top: 20rem;
-            animation-name: tamaño;
-            animation-delay: 1s;
-            animation-duration: 2s;
-            animation-timing-function: linear;
-            animation-iteration-count: 1;
         }
         .content{
             display: flex;
@@ -110,7 +109,7 @@
             color: $blanco;
             text-decoration: none;
             font-weight: bold;
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-style: italic;
             margin-right: 350px;
             z-index: 1;
@@ -125,6 +124,11 @@
                 60%{color: $amarillo}
                 80%{color: $azul}
                 100%{color: $negro}
+            }
+            @media all and(min-width: 1200px){
+                font-size: 1.5rem;
+                text-align: center;
+                margin-right: 200px;
             }
             @media all and (max-width: 576px){
                 margin-right: 150px;
@@ -146,6 +150,9 @@
                     color: $azul;
                     border-bottom:2px solid $azul;
                     margin-top: -15px;
+                }
+                @media all and (max-width: 1200px){
+                    font-size: 1.3rem;
                 }
                 @media all and (max-width: 576px){
                     font-size: 1.5rem;
@@ -194,7 +201,7 @@
             color: $azul;
             text-decoration: none;
             font-weight: bold;
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-style: italic;
             margin-right: 350px;
             animation-name: colores;
@@ -208,6 +215,11 @@
                 60%{color: $amarillo}
                 80%{color: $azul}
                 100%{color: $negro}
+            }
+            @media all and(min-width: 1200px){
+                font-size: 1.5rem;
+                text-align: center;
+                margin-right: 200px;
             }
             @media all and (max-width: 576px){
                 margin-right: 150px;
@@ -229,10 +241,11 @@
                     border-bottom:2px solid $azul;
                     margin-top: -15px;
                 }
+                @media all and (max-width: 1200px){
+                    font-size: 1.3rem;
+                }
                 @media all and (max-width: 576px){
                     font-size: 1.5rem;
-                    color: $amarillo;
-                    text-shadow: 2px 2px 2px $negro;
                 }
             }
         }
@@ -267,7 +280,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    object-fit: contain;
     width: 100%;
     height: auto;
     .header{
@@ -278,7 +290,7 @@
             color: $negro;
             text-decoration: none;
             font-weight: bold;
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-style: italic;
             margin-right: 350px;
             animation-name: colores;
@@ -292,6 +304,11 @@
                 60%{color: $amarillo}
                 80%{color: $azul}
                 100%{color: $negro}
+            }
+            @media all and(min-width: 1200px){
+                font-size: 1.5rem;
+                text-align: center;
+                margin-right: 200px;
             }
             @media all and (max-width: 576px){
                 margin-right: 150px;
@@ -313,6 +330,9 @@
                     border-bottom:2px solid $azul;
                     margin-top: -10px;
                 }
+                @media all and (max-width: 1200px){
+                    font-size: 1.3rem;
+                }
                 @media all and (max-width: 576px){
                     font-size: 1.5rem;
                 }
@@ -325,7 +345,7 @@
         justify-content: space-evenly;
         z-index: 1;
         .tituloHeader{
-            padding: 10rem;
+            padding: 12.5rem;
         }
         .content{
             display: flex;
@@ -360,7 +380,7 @@
             color: $negro;
             text-decoration: none;
             font-weight: bold;
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-style: italic;
             margin-right: 350px;
             animation-name: colores;
@@ -375,10 +395,14 @@
                 80%{color: $azul}
                 100%{color: $negro}
             }
+            @media all and(min-width: 1200px){
+                font-size: 1.5rem;
+                text-align: center;
+                margin-right: 200px;
+            }
             @media all and (max-width: 576px){
                 margin-right: 150px;
                 font-size: 2rem;
-                color: $azul;
             }
         }
         .listado{
@@ -395,6 +419,9 @@
                     color: $azul;
                     border-bottom:2px solid $azul;
                     margin-top: -10px;
+                }
+                @media all and (max-width: 1200px){
+                    font-size: 1.3rem;
                 }
                 @media all and (max-width: 576px){
                     font-size: 1.5rem;
