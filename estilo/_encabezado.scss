@@ -6,9 +6,6 @@
     width: 100%;
     height: auto;
     opacity: 0.8;
-    @media all and(max-width: 576px){
-        height: auto;
-    }
     .header{
         display: flex;
         justify-content: flex-end;
@@ -17,7 +14,7 @@
             color: $negro;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.8rem;
+            font-size: 3rem;
             font-style: italic;
             margin-right: 350px;
             animation-name: colores;
@@ -33,7 +30,6 @@
                 100%{color: $negro}
             }
             @media all and(min-width: 1200px){
-                font-size: 1.5rem;
                 text-align: center;
                 margin-right: 200px;
             }
@@ -69,9 +65,7 @@
         justify-content: space-evenly;
         z-index: 1;
         .tituloHeader{
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            padding-top: 20rem;
+            padding: 10rem;
         }
         .content{
             display: flex;
@@ -81,6 +75,7 @@
             .imagenesListado{
                 width: 50px;
                 height: 50px;
+                margin-left: 50px;
                 @media all and (max-width: 576px){
                     width: 35px;
                     height: 35px;
@@ -106,14 +101,14 @@
             color: $blanco;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.8rem;
+            font-size: 3rem;
             font-style: italic;
             margin-right: 350px;
             z-index: 1;
             animation-name: colores;
-            animation-duration: 6s;
+            animation-duration: 4s;
             animation-timing-function: linear;
-            animation-iteration-count: 4;
+            animation-iteration-count: infinite;
             @keyframes colores {
                 0%{color: $negro}
                 20%{color: $blanco}
@@ -123,7 +118,6 @@
                 100%{color: $negro}
             }
             @media all and(min-width: 1200px){
-                font-size: 1.5rem;
                 text-align: center;
                 margin-right: 200px;
             }
@@ -195,7 +189,7 @@
             color: $azul;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.8rem;
+            font-size: 3rem;
             font-style: italic;
             margin-right: 350px;
             animation-name: colores;
@@ -211,7 +205,6 @@
                 100%{color: $negro}
             }
             @media all and(min-width: 1200px){
-                font-size: 1.5rem;
                 text-align: center;
                 margin-right: 200px;
             }
@@ -281,7 +274,7 @@
             color: $negro;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.8rem;
+            font-size: 3rem;
             font-style: italic;
             margin-right: 350px;
             animation-name: colores;
@@ -297,7 +290,6 @@
                 100%{color: $negro}
             }
             @media all and(min-width: 1200px){
-                font-size: 1.5rem;
                 text-align: center;
                 margin-right: 300px;
             }
@@ -368,7 +360,7 @@
             color: $negro;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.8rem;
+            font-size: 3rem;
             font-style: italic;
             margin-right: 350px;
             animation-name: colores;
@@ -384,7 +376,6 @@
                 100%{color: $negro}
             }
             @media all and(min-width: 1200px){
-                font-size: 1.5rem;
                 text-align: center;
                 margin-right: 200px;
             }

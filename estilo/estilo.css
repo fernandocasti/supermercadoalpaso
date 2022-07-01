@@ -45,6 +45,7 @@
 /*seccion index*/
 #section {
   background-color: #f1f2f6;
+  width: 100%;
 }
 #section .sectionId {
   display: flex;
@@ -137,7 +138,7 @@
 }
 @media all and (max-width: 576px) {
   #section .sectionServicios .tituloSection {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 10px;
   }
 }
@@ -167,7 +168,7 @@
 }
 @media all and (max-width: 576px) {
   #section .marcasNustras .Marcas .tituloMarcas {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     margin-bottom: 10px;
   }
 }
@@ -187,7 +188,13 @@
   }
 }
 #section .marcasNustras .nuestrasMarcas .marcasLogo {
-  margin-top: 20px;
+  margin-top: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#section .marcasNustras .nuestrasMarcas .marcasLogo .imgNuestras {
+  width: 80px;
+  height: 80px;
 }
 #section .marcasNustras #mapa {
   width: 80%;
@@ -206,7 +213,6 @@
     width: 80%;
     height: 28%;
     margin: 20px 40px;
-    padding: 20px;
   }
 }
 #section .marcasNustras #mapa .titulomapa {
@@ -349,7 +355,7 @@
   }
 }
 #footerDelFooter .desarrollador {
-  background-color: #ffffff;
+  background-color: #ff5e57;
   display: flex;
   justify-content: center;
   padding-top: 2rem;
@@ -359,7 +365,7 @@
   height: 30px;
 }
 #footerDelFooter .desarrollador .parrafoCopy {
-  color: #1e272e;
+  color: #ffffff;
   font-size: 1.5rem;
   margin: 0 0 20px 10px;
 }
@@ -635,11 +641,6 @@
   height: auto;
   opacity: 0.8;
 }
-@media all and (max-width: 576px) {
-  #encabezado {
-    height: auto;
-  }
-}
 #encabezado .header {
   display: flex;
   justify-content: flex-end;
@@ -649,7 +650,7 @@
   color: #1e272e;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-style: italic;
   margin-right: 350px;
   -webkit-animation-name: colores;
@@ -703,7 +704,6 @@
 }
 @media all and (min-width: 1200px) {
   #encabezado .header .tituloNa {
-    font-size: 1.5rem;
     text-align: center;
     margin-right: 200px;
   }
@@ -743,9 +743,7 @@
   z-index: 1;
 }
 #encabezado .contenidoHeader .tituloHeader {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  padding-top: 20rem;
+  padding: 10rem;
 }
 #encabezado .contenidoHeader .content {
   display: flex;
@@ -756,6 +754,7 @@
 #encabezado .contenidoHeader .content .imagenesListado {
   width: 50px;
   height: 50px;
+  margin-left: 50px;
 }
 @media all and (max-width: 576px) {
   #encabezado .contenidoHeader .content .imagenesListado {
@@ -783,18 +782,18 @@
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-style: italic;
   margin-right: 350px;
   z-index: 1;
   -webkit-animation-name: colores;
           animation-name: colores;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation-iteration-count: 4;
-          animation-iteration-count: 4;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 @keyframes colores {
   0% {
@@ -818,7 +817,6 @@
 }
 @media all and (min-width: 1200px) {
   #encabezadoPoducto .header .tituloNa {
-    font-size: 1.5rem;
     text-align: center;
     margin-right: 200px;
   }
@@ -897,7 +895,7 @@
   color: #3c40c6;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-style: italic;
   margin-right: 350px;
   -webkit-animation-name: colores;
@@ -931,7 +929,6 @@
 }
 @media all and (min-width: 1200px) {
   #encabezadoServicio .header .tituloNa {
-    font-size: 1.5rem;
     text-align: center;
     margin-right: 200px;
   }
@@ -1008,7 +1005,7 @@
   color: #1e272e;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-style: italic;
   margin-right: 350px;
   -webkit-animation-name: colores;
@@ -1042,7 +1039,6 @@
 }
 @media all and (min-width: 1200px) {
   #encabezadoPreguntas .header .tituloNa {
-    font-size: 1.5rem;
     text-align: center;
     margin-right: 300px;
   }
@@ -1121,7 +1117,7 @@
   color: #1e272e;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-style: italic;
   margin-right: 350px;
   -webkit-animation-name: colores;
@@ -1155,7 +1151,6 @@
 }
 @media all and (min-width: 1200px) {
   #encabezadoContacto .header .tituloNa {
-    font-size: 1.5rem;
     text-align: center;
     margin-right: 200px;
   }
