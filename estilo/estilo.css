@@ -50,6 +50,42 @@
 #section .sectionId {
   display: flex;
   justify-content: space-evenly;
+  -webkit-animation-name: demora;
+          animation-name: demora;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(0.1, 0.1, 0.3, 0.4);
+          animation-timing-function: cubic-bezier(0.1, 0.1, 0.3, 0.4);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+@-webkit-keyframes demora {
+  0% {
+    margin-left: -500%;
+  }
+  40% {
+    margin-left: -300%;
+  }
+  60% {
+    margin-left: -100;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+@keyframes demora {
+  0% {
+    margin-left: -500%;
+  }
+  40% {
+    margin-left: -300%;
+  }
+  60% {
+    margin-left: -100;
+  }
+  100% {
+    margin-left: 0%;
+  }
 }
 @media all and (max-width: 992px) {
   #section .sectionId {
