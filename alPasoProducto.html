@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="stylesheet" href="estilo/estilo.css">
   <title>Al Paso Producto</title>
 </head>
@@ -55,103 +56,67 @@
     </footer>
   </header>
   <section id="sectionProducto">
-    <div class="contenedorProductos">
+    <div class="contenedorProductos" id="sectionAlmacen">
       <img class="imgProductos" src="imagenes/almacensuper.png" alt="almacen">
-      <p class="subPro">Almacén</p>
-      <button class="botonProducto" type="submit" data-bs-container="body" 
-      data-bs-toggle="popover" data-bs-placement="left" 
-      data-bs-content="sepa disculparnos." 
-      data-bs-original-title="" title="LISTA EN PROCESO">ver mas</button>
+      <p class="subPro" id="tituloAlmacen">Almacén</p>
+      <button class="botonProducto" id="almacen" type="submit">ver mas</button>
+      <div id="almacenLista">
+      </div>
     </div>
     <div class="contenedorProductos">
       <img class="imgProductos" src="imagenes/bebidasSuper.png" alt="bebidas">
       <p class="subPro">Bebidas</p>
-      <button class="botonProducto" type="submit" data-bs-container="body" 
-      data-bs-toggle="popover" data-bs-placement="left" 
-      data-bs-content="sepa disculparnos." 
-      data-bs-original-title="" title="LISTA EN PROCESO">ver mas</button>
-    </div>
-    <div class="contenedorProductos">
-      <img class="imgProductos" src="imagenes/alimentoscongeladosSuper.png" alt="congelados">
-      <p class="subPro">Congelados</p>
-      <button class="botonProducto" type="submit" data-bs-container="body" 
-      data-bs-toggle="popover" data-bs-placement="left" 
-      data-bs-content="sepa disculparnos." 
-      data-bs-original-title="" title="LISTA EN PROCESO">ver mas</button>
-    </div>
-    <div class="contenedorProductos">
-      <img class="imgProductos" src="imagenes/limpiezaSuper.png" alt="Limpieza">
-      <p class="subPro">Limpieza</p>
-      <button class="botonProducto" type="submit" data-bs-container="body" 
-      data-bs-toggle="popover" data-bs-placement="left" 
-      data-bs-content="sepa disculparnos." 
-      data-bs-original-title="" title="LISTA EN PROCESO">ver mas</button>
-    </div>
-    <div class="contenedorProductos">
-      <img class="imgProductos" src="imagenes/cafeSuper.png" alt="Cafe">
-      <p class="subPro">Cafe</p>
-      <button class="botonProducto" type="submit" data-bs-container="body" 
-      data-bs-toggle="popover" data-bs-placement="left" 
-      data-bs-content="sepa disculparnos." 
-      data-bs-original-title="" title="LISTA EN PROCESO">ver mas</button>
-    </div>
-    <div class="contenedorProductos">
-      <img class="imgProductos" src="imagenes/chocolateSuper.png" alt="Chocolate">
-      <p class="subPro">Chocolate</p>
-      <button class="botonProducto" type="submit" data-bs-container="body" 
-      data-bs-toggle="popover" data-bs-placement="left" 
-      data-bs-content="sepa disculparnos." 
-      data-bs-original-title="" title="LISTA EN PROCESO">ver mas</button>
+      <button class="botonProducto" id="bebidas" type="submit">ver mas</button>
+      <div id="bebidaLista">
+      </div>
     </div>
     <div class="contenedorProductos">
       <img class="imgProductos" src="imagenes/panaderiaSuper.png" alt="Panaderia">
       <p class="subPro">Panaderia</p>
-      <button class="botonProducto" type="submit" data-bs-container="body" 
-      data-bs-toggle="popover" data-bs-placement="left" 
-      data-bs-content="sepa disculparnos." 
-      data-bs-original-title="" title="LISTA EN PROCESO">ver mas</button>
+      <button class="botonProducto" id="panaderia" type="submit">ver mas</button>
+      <div id="panaderiaLista">
+      </div>
     </div>
     <div class="contenedorProductos">
       <img class="imgProductos" src="imagenes/fiambresSuper.png" alt="Fiambres">
       <p class="subPro">Fiambres</p>
-      <button class="botonProducto" type="submit" data-bs-container="body" 
-      data-bs-toggle="popover" data-bs-placement="left" 
-      data-bs-content="sepa disculparnos." 
-      data-bs-original-title="" title="LISTA EN PROCESO">ver mas</button>
-    </div>
-    <div class="contenedorProductos">
-      <img class="imgProductos" src="imagenes/sandwichSuper.png" alt="Sandwich">
-      <p class="subPro">Sandwich</p>
-      <button class="botonProducto" type="submit" data-bs-container="body" 
-      data-bs-toggle="popover" data-bs-placement="left" 
-      data-bs-content="sepa disculparnos." 
-      data-bs-original-title="" title="LISTA EN PROCESO">ver mas</button>
-    </div>
-    <div class="contenedorProductos">
-      <img class="imgProductos" src="imagenes/heladosSuper.png" alt="Helados">
-      <p class="subPro">Helados</p>
-      <button class="botonProducto" type="submit" data-bs-container="body" 
-      data-bs-toggle="popover" data-bs-placement="left" 
-      data-bs-content="sepa disculparnos." 
-      data-bs-original-title="" title="LISTA EN PROCESO">ver mas</button>
+      <button class="botonProducto" id="fiambres" type="submit">ver mas</button>
+      <div id="FiambresLista">
+      </div>
     </div>
     <div class="contenedorProductos">
       <img class="imgProductos" src="imagenes/perfumeriaSuper.png" alt="Perfumeria">
       <p class="subPro">Perfumeria</p>
-      <button class="botonProducto" type="submit" data-bs-container="body" 
-      data-bs-toggle="popover" data-bs-placement="left" 
-      data-bs-content="sepa disculparnos." 
-      data-bs-original-title="" title="LISTA EN PROCESO">ver mas</button>
+      <button class="botonProducto" id="perfumeria" type="submit">ver mas</button>
+      <div id="perfumeriaLista">
+      </div>
     </div>
     <div class="contenedorProductos">
       <img class="imgProductos" src="imagenes/regaleriaSuper.png" alt="Regaleria">
       <p class="subPro">Regaleria</p>
-      <button  class="botonProducto"type="submit" data-bs-container="body" 
-      data-bs-toggle="popover" data-bs-placement="left" 
-      data-bs-content="sepa disculparnos." 
-      data-bs-original-title="" title="LISTA EN PROCESO">ver mas</button>
+      <button  class="botonProducto" id="regaleria" type="submit">ver mas</button>
+      <div id="regaleriaLista">
+      </div>
+    </div>
+    <div class="contenedorProductos">
+      <img class="imgProductos" src="imagenes/regaleriaSuper.png" alt="MasProductos">
+      <p class="subPro">Lista de productos</p>
+      <button  class="botonProducto" id="listaApi" type="submit">Lista de productos</button>
+      <div id="mostrarApi">
+      </div>
+    </div>
+    <div>
+      <h1 class="tituloCarrito">Carrito </h1>
+      <div id="compras">
+      
+      </div>
+    </div>
+   
+    <div>
+      <span id="total">total:</span>
     </div>
   </section>
+ 
   <section id="sectionSegundo">
     <h1 class="tituloDelFooter">NAVEGA EN EL SITIO</h1>
     <nav class="headerFooter">
@@ -188,12 +153,15 @@
       <p class="parrafoCopy">copyright: Castillo Fernando</p>
     </div>
   </footer>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script>
-      		var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl)
-      })
-    </script>
+  <script src="js/botones.js"></script>
+  <script src="js/listadoProducto.js"></script>
+  <script src="js/botonesComprar.js"></script>
+  <script src="js/mostrar.js"></script>
+  <script src="js/listado.js"></script>
+  
+  
+  
 </body>
 </html>

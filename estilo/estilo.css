@@ -58,34 +58,12 @@
           animation-timing-function: cubic-bezier(0.1, 0.1, 0.3, 0.4);
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-}
-@-webkit-keyframes demora {
-  0% {
-    margin-left: -500%;
-  }
-  40% {
-    margin-left: -300%;
-  }
-  60% {
-    margin-left: -100;
-  }
-  100% {
-    margin-left: 0%;
-  }
-}
-@keyframes demora {
-  0% {
-    margin-left: -500%;
-  }
-  40% {
-    margin-left: -300%;
-  }
-  60% {
-    margin-left: -100;
-  }
-  100% {
-    margin-left: 0%;
-  }
+  /* @keyframes demora {
+       0%{ margin-left: -500%}
+       40%{ margin-left: -300%}
+       60%{margin-left: -100}
+       100%{ margin-left: 0%}
+   }*/
 }
 @media all and (max-width: 992px) {
   #section .sectionId {
@@ -414,7 +392,7 @@
 /*productos*/
 #sectionProducto {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 50% 50%;
   justify-content: space-evenly;
   background-color: #f1f2f6;
 }
@@ -746,7 +724,7 @@
 }
 @media all and (max-width: 576px) {
   #encabezado .header .tituloNa {
-    margin-right: 150px;
+    margin-right: 130px;
     font-size: 2rem;
   }
 }
@@ -1043,7 +1021,7 @@
   font-weight: bold;
   font-size: 3rem;
   font-style: italic;
-  margin-right: 350px;
+  margin-right: 330px;
   -webkit-animation-name: colores;
           animation-name: colores;
   -webkit-animation-duration: 6s;

@@ -1,6 +1,15 @@
 {
     "folders": [
         {
+            "path": "..\\castillo Fernando"
+        },
+        {
+            "path": "..\\affter"
+        },
+        {
+            "path": "..\\librerias"
+        },
+        {
             "path": "."
         }
     ],
@@ -8,11 +17,33 @@
         "version": "0.2.0",
         "configurations": [
             {
-                "type": "pwa-msedge",
+                "type": "msedge",
                 "request": "launch",
                 "name": "Open index.html",
                 "file": "c:\\terceraEntregaAlmacen\\index.html"
             }
+        ]
+    },
+    "settings": {
+        "cSpell.words": [
+            "Preguntas"
+        ],
+        "liveServer.settings.multiRootWorkspaceName": "ProyectoFinal",
+        "thunder-client.htmlView": "Preview",
+        "search.useGlobalIgnoreFiles": true,
+        "search.useParentIgnoreFiles": true,
+        "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+        "liveServer.settings.ChromeDebuggingAttachment": false,
+        "liveServer.settings.ignoreFiles": [
+            ".vscode/**",
+            "**/*.scss",
+            "**/*.sass",
+            "**/*.ts"
+        ]
+    },
+    "extensions": {
+        "recommendations": [
+            "ritwickdey.LiveServer"
         ]
     }
 }
